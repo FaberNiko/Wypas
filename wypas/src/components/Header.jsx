@@ -8,9 +8,6 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.overlay}>
-				<div className={styles.logoContainer}>
-					<img src={logo} alt="Wypas burger logo" className={styles.logoImg} />
-				</div>
 				<div className={styles.content}>
 					<h1>Wypas burger</h1>
 					<p>Najwyższej jakości burgery!</p>
