@@ -10,7 +10,7 @@ export default function Header() {
 					<div className={styles.content}>
 						<h1>Wypas burger</h1>
 						<p>Najwyższej jakości burgery!</p>
-						<a href="#menu">Zobacz menu</a>
+						<a href="#menu" className={styles.menuButton}>Zobacz menu</a>
 						<div className={styles.icons}>
 							<a
 								className={styles.socialIcon}

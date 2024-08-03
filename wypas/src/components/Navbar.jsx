@@ -14,9 +14,9 @@ export default function Navbar() {
 	return (
 		<div>
 			<nav>
-				<div className="logoContainer">
+				<a href='#'className="logoContainer">
 					<img src={logo} alt="Wypas burger logo" className="logo" />
-				</div>
+				</a>
 				<button className={`burgerBtn ${isClicked ?  'clicked' : ''}`} onClick={handleClick}>
 					<span></span>
 					<span></span>
@@ -24,18 +24,18 @@ export default function Navbar() {
 				</button>
 			</nav>
 			<div className={`navList ${menuOpen ? "active" : ""}`}>
-				<ul>
-					<li>
-						<a href="#menu" onClick={handleClick}>menu</a>
+				<ul className="nav-ul">
+					<li className="nav-ul__item">
+						<a href="#menu" className="nav-item" onClick={handleClick}>menu</a>
 					</li>
-					<li>
-						<a href="#news" onClick={handleClick}>aktualności</a>
+					<li className="nav-ul__item">
+						<a href="#news" className="nav-item"  onClick={handleClick}>aktualności</a>
 					</li>
-					<li>
-						<a href="#gallery" onClick={handleClick}>galeria</a>
+					<li className="nav-ul__item">
+						<a href="#gallery" className="nav-item"  onClick={handleClick}>galeria</a>
 					</li>
-					<li>
-						<a href="#contact" onClick={handleClick}>kontakt</a>
+					<li className="nav-ul__item">
+						<a href="#contact" className="nav-item"  onClick={handleClick}>kontakt</a>
 					</li>
 				</ul>
 				<div className="languages">

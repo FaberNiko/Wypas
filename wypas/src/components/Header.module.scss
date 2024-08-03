@@ -19,6 +19,7 @@
 		z-index: -5;
 	}
 
+
 	.content {
 		display: flex;
 		justify-content: center;
@@ -41,7 +42,7 @@
 			letter-spacing: 2px;
 		}
 
-		a {
+		.menuButton {
 			text-transform: uppercase;
 			text-decoration: none;
 			color: #fff;
@@ -66,10 +67,12 @@
 			.socialIcon {
 				background: none;
 				border: none;
-				height: 4.5rem;
+				height: 3rem;
+				margin: 2em 1em;
 			}
 		}
 	}
+
 }
 
 @media (min-width: 768px) {
@@ -81,8 +84,13 @@
 
 			.icons {
 				.socialIcon {
-					height: 4.7rem;
+					height: 3.3rem;
+					margin: 4em 1em;
 				}
+			}
+
+			.menuButton {
+				font-size: 1rem;
 			}
 		}
 	}
@@ -100,14 +108,14 @@
 				font-size: 1.6rem;
 			}
 
-			a {
+			.menuButton {
 				font-size: 1rem;
 			}
 
 			.icons {
 				margin-top: 1em;
 				.socialIcon {
-					height: 5.7rem;
+					height: 3.8rem;
 				}
 			}
 		}
@@ -128,14 +136,16 @@
 				margin-top: 1em;
 			 }
 
-			 a {
+			 .menuButton {
 				font-size: 1.2rem;
 			 }
 
 			 .icons {
-				margin-top: 8em;
+				margin-top: 3em;
+				
 
 				.socialIcon{
+					margin: 4px 2em;
 					transition: transform .3s;
 
 					&:hover {
