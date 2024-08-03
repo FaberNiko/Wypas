@@ -7,13 +7,10 @@ ul {
 
     .listItem {
         color: #fff;
-        margin-top: 1em;
-        border-bottom: 1px solid white;
-        padding: 1.5em;
+        border: 1px solid white;
+        padding: 1.2em;
 
-        &:nth-child(1) {
-            border-top:1px solid white ;
-        }
+
         .title {
             text-transform: uppercase;
             margin-top: 1em;
