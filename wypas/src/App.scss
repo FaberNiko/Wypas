@@ -113,12 +113,15 @@ nav {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        padding: 10px;
-
+        
         .language {
+            background: transparent;
+            border: none;
+            padding: 10px;
             display: flex;
             align-items: center;
             margin: 10px 0;
+            cursor: pointer;
 
             img {
                 height: 1em;

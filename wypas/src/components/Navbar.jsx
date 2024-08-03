@@ -26,27 +26,27 @@ export default function Navbar() {
 			<div className={`navList ${menuOpen ? "active" : ""}`}>
 				<ul>
 					<li>
-						<a href="#menu">menu</a>
+						<a href="#menu" onClick={handleClick}>menu</a>
 					</li>
 					<li>
-						<a href="#news">aktualności</a>
+						<a href="#news" onClick={handleClick}>aktualności</a>
 					</li>
 					<li>
-						<a href="#gallery">galeria</a>
+						<a href="#gallery" onClick={handleClick}>galeria</a>
 					</li>
 					<li>
-						<a href="#contact">kontakt</a>
+						<a href="#contact" onClick={handleClick}>kontakt</a>
 					</li>
 				</ul>
 				<div className="languages">
-					<div className="language">
+					<button className="language">
 						<img src={polish} alt="polish flag" />
 						<p>PL</p>
-					</div>
-					<div className="language">
+					</button>
+					<button className="language">
 						<img src={eng} alt="english flag" />
 						<p>ENG</p>
-					</div>
+					</button>
 
 					
 				</div>
