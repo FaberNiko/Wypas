@@ -26,6 +26,9 @@ export default function Navbar() {
 			<div className={`navList ${menuOpen ? "active" : ""}`}>
 				<ul className="nav-ul">
 					<li className="nav-ul__item">
+						<a href="#" className="nav-item" onClick={handleClick}>strona główna</a>
+					</li>
+					<li className="nav-ul__item">
 						<a href="#menu" className="nav-item" onClick={handleClick}>menu</a>
 					</li>
 					<li className="nav-ul__item">

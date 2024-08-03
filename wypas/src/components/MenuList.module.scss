@@ -1,33 +1,105 @@
-ul {
-    text-align: center;
-    list-style: none;
-    padding-top: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+.list {
+	list-style: none;
+	padding-top: 2em;
+	padding-left: 1em;
+	padding-right: 1em;
 
-    .listItem {
-        color: #fff;
-        border: 1px solid white;
-        padding: 1.2em;
+	.listItem {
+		color: #fff;
+		border: 1px solid white;
 
+		.title {
 
-        .title {
-            text-transform: uppercase;
-            margin-top: 1em;
-            font-size: 1.8rem;
-            font-weight: bold;
+			text-align: center;
+
+			margin-top: 0.5em;
+			font-size: 1.8rem;
+			font-weight: bold;
+			text-transform: uppercase;
+
+		}
+        .menuIcons{
+            display: flex;
+            justify-content: center;
+            .icon {
+                margin: 0.2em 0;
+                height: 25px;
+                width: 25px;
+            }
+
         }
-        .description {
-            line-height: 2;
-            margin-top: 1em;
-        }
-        .price {
-            margin-top: 1em;
-            font-size: 2rem;
-            letter-spacing: 2px;
-            color: #ff5757;
-            text-align: center;
-            font-weight: bold;
-        }
-    }
+		
+		.description {
+			text-align: center;
+
+			line-height: 2;
+			padding: 0 1em;
+			margin-top: .5em;
+		}
+		.price {
+			margin: 0.5em;
+			font-size: 2rem;
+			letter-spacing: 2px;
+			color: #ff5757;
+			text-align: center;
+			font-weight: bold;
+		}
+	}
+}
+
+@media (min-width: 772px) {
+	.list {
+		padding-left: 5em;
+		padding-right: 5em;
+
+		.listItem {
+			padding: 1.5em;
+
+			.title {
+				margin-top: 0.5em;
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.list {
+		padding-left: 7em;
+		padding-right: 7em;
+
+		.listItem {
+			padding: 2em;
+			.title {
+				margin-top: 0.7em;
+			}
+
+			.description {
+				font-size: 1.1rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.list {
+		margin-top: 1em;
+		padding: 0 3em;
+		.listItem {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			padding: 0 0.5em;
+			height: 18rem;
+
+			.title {
+				font-size: 2rem;
+			}
+
+			.description {
+				padding: 0 3em;
+			}
+		}
+	}
 }
