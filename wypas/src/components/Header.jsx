@@ -1,4 +1,3 @@
-import logo from "../images/logo.jpg";
 import IconFacebook from "./FacebookIcon";
 import styles from "./Header.module.scss";
 import IconInstagram from "./InstaIcon";
