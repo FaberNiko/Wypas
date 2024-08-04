@@ -6,8 +6,9 @@ import vegan from '../images/leaf.png'
 export default function Menu() {
 	return (
 		<section id="menu" className={styles.menu}>
+
 			<h2 className={styles.menuTitle}>menu</h2>
-			<div className={styles.menuHero}>
+			<div className={styles.menuItems}>
 				<MenuList
 					title={"klasyk"}
 					desc={

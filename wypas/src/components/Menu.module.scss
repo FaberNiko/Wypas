@@ -9,6 +9,7 @@
         padding: 0 2em;
         text-shadow: #ff5757 2px 0 10px;
         margin-top: 2em;
+        margin-bottom: 1em;
         height: 3rem;
         letter-spacing: 2px;
         width: 100%;
@@ -19,7 +20,7 @@
     }
 
     
-	.menuHero {
+	.menuItems {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -75,14 +76,12 @@
 
 @media (min-width: 1400px) {
 	.menu {
-		display: flex;
-        flex-direction: column;
-	
-		
+  
 
-		.menuHero {
+		.menuItems {
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+
         }
 
         .menuTitle {

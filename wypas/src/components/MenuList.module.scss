@@ -1,12 +1,17 @@
 .list {
 	list-style: none;
-	padding-top: 2em;
+	// padding-top: 2em;
 	padding-left: 1em;
 	padding-right: 1em;
 
 	.listItem {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 		color: #fff;
-		border: 1px solid white;
+		border-top: 1px solid white;
+		margin-top: 0.5em;
 
 		.title {
 
@@ -37,8 +42,9 @@
 			margin-top: .5em;
 		}
 		.price {
+			padding: .5em 1em;
 			margin: 0.5em;
-			font-size: 2rem;
+			font-size: 1.6rem;
 			letter-spacing: 2px;
 			color: #ff5757;
 			text-align: center;
@@ -82,6 +88,8 @@
 
 @media (min-width: 1400px) {
 	.list {
+		display: flex;
+		justify-content: center;
 		margin-top: 1em;
 		padding: 0 3em;
 		.listItem {
@@ -89,16 +97,15 @@
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
+			width: 80%;
 			text-align: center;
-			padding: 0 0.5em;
-			height: 18rem;
 
 			.title {
 				font-size: 2rem;
 			}
 
 			.description {
-				padding: 0 3em;
+				padding: 0 1em;
 			}
 		}
 	}
