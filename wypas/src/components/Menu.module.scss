@@ -5,10 +5,12 @@
 }
 
 .menu {
+    height: 100vh;
     .menuTitle {
-        padding: 0 2em;
+        padding-top: 1.5em;
+        padding-bottom: 1em;
         text-shadow: #ff5757 2px 0 10px;
-        margin-top: 2em;
+        // margin-top: 2em;
         margin-bottom: 1em;
         height: 3rem;
         letter-spacing: 2px;
@@ -76,12 +78,12 @@
 
 @media (min-width: 1400px) {
 	.menu {
-  
+        height: 100vh;
+        position: relative;
+        width: 100%;
 
 		.menuItems {
             width: 100%;
-            display: grid;
-
         }
 
         .menuTitle {
