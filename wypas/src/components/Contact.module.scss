@@ -1,0 +1,161 @@
+.sectionTitle {
+	padding-top: 2.5em;
+	font-size: 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 1.5em;
+	color: #fff;
+	text-align: center;
+
+	.logo {
+		height: 15rem;
+		width: 15rem;
+		padding: 1em;
+		border-radius: 50%;
+	}
+
+	.info {
+		font-size: 1.1rem;
+		.infoItem {
+			padding: 0.5em;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+		}
+	}
+
+	.hours {
+		margin-top: 0.5em;
+		border-radius: 15px;
+
+		.listName {
+			color: #ff5757;
+			font-weight: bold;
+			font-size: 1.2rem;
+			text-transform: uppercase;
+			padding: 0.5em;
+		}
+
+		ul {
+			list-style: none;
+			text-align: center;
+			text-transform: uppercase;
+
+			li {
+				padding: 0.5em;
+			}
+		}
+	}
+}
+.icons {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 0.5em;
+	.socialIcon {
+		background: none;
+		border: none;
+		height: 2rem;
+		margin: 0.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.sectionTitle {
+		font-size: 2.4rem;
+	}
+	.container {
+		.logo {
+			height: 18rem;
+			width: 18rem;
+		}
+
+		.info {
+			font-size: 1.2rem;
+		}
+
+		.hours {
+			.listName {
+				font-size: 1.4rem;
+			}
+			font-size: 1.2rem;
+		}
+	}
+	.icons {
+		.socialIcon {
+			height: 2.5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.sectionTitle {
+		font-size: 2.7rem;
+	}
+
+	.container {
+		.logo {
+			height: 20rem;
+			width: 20rem;
+		}
+	}
+	.icons {
+		.socialIcon {
+			height: 3rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.sectionTitle {
+		font-size: 2.9rem;
+	}
+
+	.container {
+		flex-direction: row;
+        justify-content: center;
+		align-items: center;
+        text-align: center;
+        padding: 0;
+        margin-right: 8rem;
+
+		.logo {
+			width: 25rem;
+			height: 25rem;
+		}
+
+		.info {
+			padding: 0;
+
+			.infoItem {
+				padding: 0.5em 0;
+			}
+		}
+
+		.hours {
+
+			ul {
+				li {
+					padding: .5em 0;
+				}
+			}
+		}
+	}
+	.icons {
+		.socialIcon {
+			height: 3rem;
+			margin-right: 1rem;
+            transition: transform .3s;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+		}
+	}
+}

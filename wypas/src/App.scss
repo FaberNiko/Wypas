@@ -91,7 +91,6 @@ nav {
         justify-content: center;
         align-items: center;
         list-style: none;
-        padding: 2em;
         margin: 0;
         flex-grow: 1;
         &__item {
@@ -133,6 +132,17 @@ nav {
                 padding: 0 .3em;
             }
         }
+    }
+}
+
+.footer {
+    background-color: #0c0c0c;
+    text-align: center;
+    color: #6b6a6a;
+    padding: 0.2em;
+
+    a {
+        color: #6b6a6a;
     }
 }
 

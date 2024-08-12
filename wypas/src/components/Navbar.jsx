@@ -35,9 +35,6 @@ export default function Navbar() {
 						<a href="#monthly" className="nav-item"  onClick={handleClick}>burger miesiąca</a>
 					</li>
 					<li className="nav-ul__item">
-						<a href="#gallery" className="nav-item"  onClick={handleClick}>galeria</a>
-					</li>
-					<li className="nav-ul__item">
 						<a href="#contact" className="nav-item"  onClick={handleClick}>kontakt</a>
 					</li>
 				</ul>

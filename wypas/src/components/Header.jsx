@@ -1,6 +1,6 @@
 import IconFacebook from "./FacebookIcon";
-import styles from "./Header.module.scss";
 import IconInstagram from "./InstaIcon";
+import styles from "./Header.module.scss";
 
 export default function Header() {
 	return (
@@ -9,7 +9,7 @@ export default function Header() {
 				<div className={styles.overlay}>
 					<div className={styles.content}>
 						<h1>Wypas burger</h1>
-						<p>Najwyższej jakości burgery!</p>
+						<p className={styles.subtitle}>Najwyższej jakości burgery!</p>
 						<a href="#menu" className={styles.menuButton}>Zobacz menu</a>
 						<div className={styles.icons}>
 							<a
@@ -25,6 +25,7 @@ export default function Header() {
 								<IconFacebook />
 							</a>
 						</div>
+					
 					</div>
 				</div>
 			</div>
