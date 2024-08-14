@@ -32,40 +32,7 @@ nav {
 	}
 
 	.burgerBtn {
-		position: fixed;
-		right: 0;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 2em;
-		width: 5rem;
-		background-color: transparent;
-		gap: 0.5rem;
-		border: none;
-		cursor: pointer;
-		z-index: 6;
-
-		span {
-			width: 2rem;
-			height: 0.2rem;
-			background-color: #fff;
-			border-radius: 5px;
-			z-index: 12;
-			transition: ease-out 0.5s;
-		}
-	}
-
-	.burgerBtn.clicked {
-		span:nth-child(1) {
-			transform: rotate(45deg) translate(0.2em, 0.55em);
-		}
-		span:nth-child(2) {
-			transform: scale(0.1);
-		}
-		span:nth-child(3) {
-			transform: rotate(135deg) translate(-0.7em, 1em);
-		}
+			margin-right: 10px;
 	}
 }
 
