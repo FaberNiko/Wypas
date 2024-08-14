@@ -2,11 +2,29 @@ import "../App.scss";
 import logo from "../assets/logo.svg";
 import eng from "../images/eng.png";
 import polish from "../images/polish.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Turn as Hamburger } from "hamburger-react";
 export default function Navbar() {
 	const [isClicked, setIsClicked] = useState(false);
 	const [menuOpen, setMenuOpen] = useState(false);
+	const [isScrolled, setIsScrolled] = useState(false)
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setIsScrolled(true);
+			} else {
+				setIsScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 
 	const handleClick = () => {
 		setIsClicked(!isClicked);
@@ -14,7 +32,7 @@ export default function Navbar() {
 	};
 	return (
 		<div>
-			<nav>
+			<nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
 				<a href="#" className="logoContainer">
 					<img src={logo} alt="Wypas burger logo" className="logo" />
 				</a>
