@@ -14,6 +14,8 @@ i18n
 					menu: "Menu",
 					month_burger: "Burger of the Month",
 					contact: "Contact",
+                    top_quality: "Top quality burgers",
+                    show_menu: "show menu",
 					burgers: "Burgers",
 					trimmings: "Trimmings",
 					klasyk_desc:
@@ -46,7 +48,15 @@ i18n
                     sauces: "sauces",
                     sauces_type: "garlic sauce, mayo sauce, BBQ sauce, honey & mustard sauce, hot sauce",
                     drink: "bottled drinks",
-                    papper_bag: "papper bag"
+                    papper_bag: "papper bag",
+                    month_info: "After the July break and the return of your favorite TRUFFLE, it's time to go on a culinary journey and discover new flavors that have never been seen in our Wypasa before   🗺️ In the August burger, which we had a lot of time to come up with, we combined carefully selected ingredients that create a truly amazing combination 🤯 😋 Today we invite you to... THE FRENCH...",
+                    read_more: "Read more",
+                    hours: "Opening hours",
+                    mon: "mon",
+                    thr: "thu",
+                    fr: "fr",
+                    sat: "sat",
+                    sun: "sun"
 				},
 			},
 			pl: {
@@ -55,6 +65,8 @@ i18n
 					menu: "menu",
 					month_burger: "burger miesiąca",
 					contact: "kontakt",
+                    top_quality: "Najwyższej jakości burgery",
+                    show_menu: "zobacz menu",
 					burgers: "Burgery",
 					trimmings: "Dodatki",
 					klasyk_desc:
@@ -87,7 +99,16 @@ i18n
                     sauces: "sos",
                     sauces_type: "czosnkowy, majonezowy, BBQ, miodowo-musztardowy, ostry",
                     drink: "napój",
-                     papper_bag: "torba papierowa"
+                     papper_bag: "torba papierowa",
+                     month_info: "Po lipcowej przerwie i powrocie waszej ulubionej TRUFLI, czas wyruszyć w kulinarną podróż i odkrywać nowe smaki , jakich jeszcze w naszym Wypasie nie było 🧳🗺️ W burgerze sierpnia, na którego wymyślenie mieliśmy naprawdę sporo czasu połączyliśmy starannie dobrane składniki, które tworzą naprawdę powalające połączenie 🤯😋 Już dzisiaj zapraszamy na… FRANCUZA..",
+                     read_more: "Czytaj więcej",
+                     hours: "Godziny otwarcia",
+                     mon: "pn",
+                     thr: "cz",
+                     fr: "pt",
+                     sat: "sb",
+                     sun: "nd"
+
 				},
 			},
 		},

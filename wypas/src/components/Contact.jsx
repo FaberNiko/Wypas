@@ -2,11 +2,13 @@ import styles from "./Contact.module.scss";
 import IconFacebook from "./FacebookIcon";
 import IconInstagram from "./InstaIcon";
 import logo from '../images/wypas.png'
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+	const {t} = useTranslation();
 	return (
 		<section id="contact">
-			<h2 className={styles.sectionTitle}>Kontakt</h2>
+			<h2 className={styles.sectionTitle}>{t('contact')}</h2>
 			<div className={styles.container}>
 			
 				<img src={logo} className={styles.logo}></img>
@@ -19,11 +21,11 @@ export default function Contact() {
 				</div>
 
                 <div className={styles.hours}>
-							<p className={styles.listName}>Godziny otwarcia</p>
+							<p className={styles.listName}>{t('hours')}</p>
 							<ul>
-								<li>Pn - Cz 12:00 - 21:00</li>
-								<li>Pt - Sb 12:00 - 22:00</li>
-								<li>Nd 14:00 - 21:00</li>
+								<li>{t('mon')} - {t('thr')} 12:00 - 21:00</li>
+								<li>{t('fr')} - {t('sat')} 12:00 - 22:00</li>
+								<li>{t('sun')} 14:00 - 21:00</li>
 							</ul>
 						</div>
 			</div>
