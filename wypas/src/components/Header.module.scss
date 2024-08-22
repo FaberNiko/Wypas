@@ -1,78 +1,47 @@
 .header {
-	position: relative;
-	height: 100vh;
-	overflow: hidden;
-	background: url("../images/headerHeroSm.jpg");
-	background-size: cover;
-	// background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	z-index: 0;
-
-	.overlay {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: rgba(0, 0, 0, 0.8);
-		z-index: -5;
+	.textWrapper {
+		display: none;
 	}
+	.hero {
+		position: relative;
+		overflow: hidden;
+		height: 100vh;
+		width: 100%;
+		z-index: 0;
+		background-image: url("../images/background.png");
+		background-position: bottom;
+		background-repeat: repeat-x;
 
-	.content {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		height: 100%;
-		color: #fff;
-		text-align: center;
-		margin-top: 3em;
-		h1 {
-			text-transform: uppercase;
-			font-size: 3rem;
-			margin-bottom: 0;
-			text-align: center;
-
-			font-weight: 600;
-		}
-
-		.subtitle {
-			margin-top: 0.6em;
-			font-size: 1.2rem;
-			letter-spacing: 2px;
-		}
-
-		.menuButton {
-			text-transform: uppercase;
-			text-decoration: none;
+		.content {
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 			color: #fff;
-			background-color: #00000070;
-			padding: 1em 2em;
-			margin-top: 2em;
-			font-size: 0.8rem;
-			text-align: center;
-			border: 1px solid white;
-			border-radius: 15px;
-			transition: background-color 0.5s;
+			height: 100%;
 
-			&:hover {
-				background-color: #1d1d1d;
+			.logo {
+				height: 20rem;
+				border-radius: 50%;
 			}
 
-			
-		}
+			.menuButton {
+				margin-bottom: 2em;
+				text-transform: uppercase;
+				text-decoration: none;
+				color: #fff;
+				background-color: #00000070;
+				padding: 1em 2em;
+				font-size: 0.9rem;
+				text-align: center;
+				border: 1px solid white;
+				border-radius: 15px;
+				transition: background-color 0.5s;
 
-		.icons {
-			display: flex;
-			width: 100%;
-			height: 4rem;
-			justify-content: center;
-			.socialIcon {
-				background: none;
-				border: none;
-				height: 3rem;
-				margin: 2em 1em;
+				&:hover {
+					background-color: #1d1d1d;
+				}
 			}
 		}
 	}
@@ -80,20 +49,15 @@
 
 @media (min-width: 768px) {
 	.header {
-		.content {
-			h1 {
-				font-size: 3.2rem;
-			}
-
-			.icons {
-				.socialIcon {
-					height: 3.3rem;
-					margin: 4em 1em;
+		.hero {
+			.content {
+				.logo {
+					height: 30rem;
 				}
-			}
 
-			.menuButton {
-				font-size: 1rem;
+				.menuButton {
+					font-size: 1rem;
+				}
 			}
 		}
 	}
@@ -101,24 +65,49 @@
 
 @media (min-width: 992px) {
 	.header {
-		.content {
-			padding: 1em;
-			h1 {
-				font-size: 3.8rem;
+		.hero {
+			.content {
+				.logo {
+					height: 35rem;
+				}
+				.menuButton {
+					font-size: 1.1rem;
+				}
 			}
+		}
+	}
+}
+@media (min-width: 1200px) {
+	.header {
+		position: relative;
+		overflow: hidden;
 
-			.subtitle {
-				font-size: 1.6rem;
+		.textWrapper {
+			display: flex;
+			position: absolute;
+			align-items: center;
+			top: 40%;
+			max-width: 6000px;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			white-space: nowrap; /* Zapobiega zawijaniu tekstu */
+			.text {
+				animation: scrollText 10000ms linear infinite; /* Animacja */
+				font-size: 7rem;
+				gap: 1;
+				color: #ffffff0e;
+				text-transform: uppercase;
+				margin-right: 0 5rem; /* Odstęp między powtarzającymi się tekstami */
 			}
-
-			.menuButton {
-				font-size: 1rem;
-			}
-
-			.icons {
-				margin-top: 1em;
-				.socialIcon {
-					height: 3.8rem;
+		}
+		.hero {
+			.content {
+				.logo {
+					height: 40rem;
+				}
+				.menuButton {
+					margin-bottom: 5em;
+					font-size: 1.2rem;
 				}
 			}
 		}
@@ -127,34 +116,36 @@
 
 @media (min-width: 1400px) {
 	.header {
-		background: url("../images/headerHeroBg.jpg");
-		background-size: cover;
-		background-position: center;
-		.content {
-			margin-top: 10em;
-			h1 {
-				font-size: 4.2rem;
-			}
-			.subtitle {
-				margin-top: 1em;
-			}
+	
 
-			.menuButton {
-				font-size: 1.2rem;
-			}
+	.textWrapper {
+		
+		.text {
+			font-size: 10rem;
+			
+		}
+	}
+		.hero {
+			.content {
+				padding: 4em;
+				.logo {
+					height: 45rem;
+				}
 
-			.icons {
-				margin-top: 7em;
-
-				.socialIcon {
-					margin: 4px 2em;
-					transition: transform 0.3s;
-
-					&:hover {
-						transform: scale(1.2);
-					}
+				.menuButton {
+					margin-bottom: 5.5em;
+					font-size: 1.2rem;
 				}
 			}
 		}
+	}
+}
+
+@keyframes scrollText {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-100%);
 	}
 }

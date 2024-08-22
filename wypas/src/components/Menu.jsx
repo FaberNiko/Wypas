@@ -42,7 +42,7 @@ export default function Menu() {
 					price={23}
 					icons={[vegan]}
 				/>
-				<MenuList title={t("burger_miesiaca")} price={29} />
+				<MenuList title={t("month_burger")} price={29} />
 			</div>
 			<p className={styles.trimmings} >
 				<Trans i18nKey="trimmings_text">
