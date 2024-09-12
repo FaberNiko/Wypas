@@ -1,0 +1,166 @@
+.heroBg {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	z-index: 0;
+
+	.heroShadow {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.9);
+		z-index: -5;
+	}
+	.sectionTitle {
+		text-transform: uppercase;
+		text-align: center;
+		color: #fff;
+		padding-top: 2.5em;
+		padding-bottom: 1em;
+		font-size: 2rem;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		img {
+			border: 2px solid white;
+			height: 15rem;
+			width: 15rem;
+			border-radius: 50%;
+		}
+
+		.infoContainer {
+			.name {
+				color: #fff;
+				text-transform: uppercase;
+				margin-top: 1em;
+				text-align: center;
+				font-size: 1.7rem;
+				font-weight: bold;
+			}
+			.info {
+				color: #fff;
+				text-align: center;
+				padding: 2em 1.5em;
+				line-height: 30px;
+			}
+			a {
+				text-decoration: none;
+				color: #747474;
+			}
+		}
+	}
+}
+
+@media (min-width: 772px) {
+	.heroBg {
+		.sectionTitle {
+			font-size: 2.4rem;
+		}
+		.content {
+			img {
+				height: 18rem;
+				width: 18rem;
+			}
+
+			.infoContainer {
+				.info {
+					font-size: 1.2rem;
+				}
+				.name {
+					font-size: 2rem;
+				}
+
+				a {
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.heroBg {
+		.sectionTitle {
+			font-size: 2.7rem;
+		}
+
+		.content {
+			img {
+				height: 20rem;
+				width: 20rem;
+			}
+
+			.infoContainer {
+				.name {
+					font-size: 2.1rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.heroBg {
+		background-image: url("../images/MonthBurger/francuzBig.jpg");
+
+		.sectionTitle {
+			font-size: 2.9rem;
+		}
+		.content {
+			flex-direction: row;
+			justify-content: center;
+			padding: 1em;
+
+			img {
+				height: 22rem;
+				width: 22rem;
+			}
+
+			.infoContainer {
+				width: 50%;
+
+				.name {
+					margin-top: 0;
+				}
+				.info {
+					margin-top: 0.5em;
+					padding: 0 1em;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 1400px) {
+	.heroBg {
+		.sectionTitle {
+			font-size: 2.8rem;
+		}
+
+		.content {
+			padding-bottom: 3em;
+			img {
+				height: 25rem;
+				width: 25rem;
+			}
+
+			.infoContainer {
+				.name {
+					font-size: 2.2rem;
+				}
+
+				.info {
+					margin-top: 1rem;
+					font-size: 1.2rem;
+				}
+			}
+		}
+	}
+}
