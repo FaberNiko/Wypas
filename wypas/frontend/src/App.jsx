@@ -6,15 +6,47 @@ import Menu from "./components/Menu.jsx";
 import MonthlyBurger from "./components/MonthlyBurger.jsx";
 import Navbar from "./components/Navbar.jsx";
 import News from "./components/News.jsx";
+import { useEffect, useState } from "react";
+
+
 
 function App() {
+	const [isScrolled, setIsScrolled] = useState(false);
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > 50) {
+				setIsScrolled(true);
+			} else {
+				setIsScrolled(false);
+			}
+		};
+
+		const handleClickOutside = (event) => {
+			if (
+				navListRef.current &&
+				!navListRef.current.contains(event.target) &&
+				burgerBtnRef.current &&
+				!burgerBtnRef.current.contains(event.target)
+			) {
+				setMenuOpen(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		document.addEventListener("mousedown", handleClickOutside);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
 	return (
 		<>
-			<Navbar />
+			<Navbar isScrolled={isScrolled}/>
 			<Header />
 			<News/>
 			<Menu/>
-			<MonthlyBurger  link={"https://www.facebook.com/photo/?fbid=939582584850848&set=a.465692378906540"} name={'francuz'}/>
+			<MonthlyBurger />
 			<Contact/>
 			<Footer/>
 		</>

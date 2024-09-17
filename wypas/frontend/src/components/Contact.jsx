@@ -8,7 +8,7 @@ export default function Contact() {
 	const {t} = useTranslation();
 	return (
 		<section id="contact">
-			<h2 className={styles.sectionTitle}>{t('contact')}</h2>
+			<h2 className='sectionTitle'>{t('contact')}</h2>
 			<div className={styles.container}>
 			
 				<img src={logo} className={styles.logo}></img>

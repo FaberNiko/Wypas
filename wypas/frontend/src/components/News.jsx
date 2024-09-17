@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import useFetch from "../hooks/useFetch";
-import Message from "../images/message.png";
+import Message from "../images/dorbell.png";
 import "../App.scss";
 import { AnimatePresence, motion } from "framer-motion";
 
@@ -24,7 +24,7 @@ export default function News() {
 		<>
 			<button className="newsButton" onClick={handleClick}>
 				<img src={Message} alt="Message icon" />
-				{data.length > 0 && ( // Warunek sprawdzający czy są aktualności
+				{data.length > 0 && ( 
 					<div className="messageCounterContainer">
 						<p className="counter">{data.length}</p>
 					</div>

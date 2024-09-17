@@ -3,14 +3,14 @@ import { useTranslation } from "react-i18next";
 import useFetch from "../hooks/useFetch";
 
 export default function MonthlyBurger({ link }) {
+	const { i18n, t } = useTranslation(); // Pobieranie funkcji tłumaczeń oraz informacji o języku
+	const locale = i18n.language; 
 	const {
 		loading,
 		error,
 		data = [],
-	} = useFetch("http://localhost:1337/api/burgers?populate=*");
+	} = useFetch(`http://localhost:1337/api/burgers?populate=*&locale=${locale}`);
 
-	const { i18n, t } = useTranslation(); // Pobieranie funkcji tłumaczeń oraz informacji o języku
-    const locale = i18n.language; // Pobieranie aktualnego języka z i18n
 
 	if (loading) return <p>Loading...</p>;
 	if (error) return <p>Coś poszło nie tak</p>;
@@ -23,7 +23,7 @@ export default function MonthlyBurger({ link }) {
 		<section id="monthly">
 			<div className={styles.heroBg}  style={{ backgroundImage: `url(${heroImageUrl})` }}>
 				<div className={styles.heroShadow}></div>
-				<h2 className={styles.sectionTitle}>{t("month_burger")}</h2>
+				<h2 className='sectionTitle'>{t("month_burger")}</h2>
 				{data.map(burger => {
 					const imageUrl = `http://localhost:1337${burger.attributes.Image.data.attributes.url}`;
 

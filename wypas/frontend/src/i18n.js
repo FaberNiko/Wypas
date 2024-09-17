@@ -49,14 +49,14 @@ i18n
                     sauces_type: "garlic sauce, mayo sauce, BBQ sauce, honey & mustard sauce, hot sauce",
                     drink: "bottled drinks",
                     papper_bag: "papper bag",
-                    month_info: "After the July break and the return of your favorite TRUFFLE, it's time to go on a culinary journey and discover new flavors that have never been seen in our Wypasa before   🗺️ In the August burger, which we had a lot of time to come up with, we combined carefully selected ingredients that create a truly amazing combination 🤯 😋 Today we invite you to... THE FRENCH...",
-                    read_more: "Read more",
                     hours: "Opening hours",
                     mon: "mon",
                     thr: "thu",
                     fr: "fr",
                     sat: "sat",
-                    sun: "sun"
+                    sun: "sun",
+					read_more: "Read more"
+
 				},
 			},
 			pl: {
@@ -77,7 +77,7 @@ i18n
 						"wołowina 200g / bekon / cheddar / sałata / pikle / pomidor / krążki cebulowe / sos remulada / sos BBQ",
 					meksyk_desc:
 						"wołowina 200g / bekon / cheddar / nachosy / jalapeño / sałata / pikle / pomidor / cebula czerwona / sos remulada / sos sambal",
-					diablo_desc:
+					eldiablo_desc:
 						"wołowina 200g / bekon / cheddar / jalapeño / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos sriracha / sos habanero",
 					wypas_desc:
 						"wołowina 400g / 2x bekon / 2x cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada / sos BBQ",
@@ -100,21 +100,20 @@ i18n
                     sauces_type: "czosnkowy, majonezowy, BBQ, miodowo-musztardowy, ostry",
                     drink: "napój",
                      papper_bag: "torba papierowa",
-                     month_info: "Po lipcowej przerwie i powrocie waszej ulubionej TRUFLI, czas wyruszyć w kulinarną podróż i odkrywać nowe smaki , jakich jeszcze w naszym Wypasie nie było 🧳🗺️ W burgerze sierpnia, na którego wymyślenie mieliśmy naprawdę sporo czasu połączyliśmy starannie dobrane składniki, które tworzą naprawdę powalające połączenie 🤯😋 Już dzisiaj zapraszamy na… FRANCUZA..",
-                     read_more: "Czytaj więcej",
                      hours: "Godziny otwarcia",
                      mon: "pn",
                      thr: "cz",
                      fr: "pt",
                      sat: "sb",
-                     sun: "nd"
+                     sun: "nd",
+					 read_more: "Czytaj więcej"
 
 				},
 			},
 		},
-		fallbackLng: "pl", // Język domyślny
+		fallbackLng: "pl", 
 		interpolation: {
-			escapeValue: false, // React samodzielnie escapuje wartości
+			escapeValue: false, 
 		},
 	});
 

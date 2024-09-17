@@ -13,7 +13,7 @@ body {
 	height: 5rem;
 	z-index: 1;
 	display: flex;
-	justify-content: space-between;
+	justify-content: end;
 	align-items: center;
 	transition: background-color 0.3s ease;
 
@@ -24,6 +24,7 @@ body {
 	.logoContainer {
 		height: 70%;
 		width: 3.5rem;
+		margin-right: auto;
 		margin-left: 1.5em;
 		background-color: #fff;
 		border-radius: 50%;
@@ -38,6 +39,43 @@ body {
 
 	.burgerBtn {
 		margin-right: 10px;
+	}
+
+	.phoneContainer {
+		position: relative;
+		display: flex;
+		align-items: center;
+		overflow: hidden; /* Ukrycie numeru poza kontenerem */
+		width: fit-content;
+		text-decoration: none;
+
+		.phoneIcon {
+			background-color: #fff;
+			border-radius: 50%;
+			height: 2rem;
+			padding: .2em;
+			margin-right: 1rem;
+			transition: transform 0.3s ease; /* Płynne przesuwanie ikony */
+			cursor: pointer; /* Ręka na hover */
+			z-index: 1; /* Zawsze nad numerem */
+		}
+		
+		.number {
+			color: #fff;
+			text-decoration: none;
+			margin-right: 10px;
+			opacity: 0; /* Ukryty domyślnie */
+			transition: opacity 0.3s ease, transform 0.3s ease;
+			transform: translateX(50%); /* Schowany numer */
+		}
+	}
+
+	.phoneContainer:hover .phone-icon {
+		transform: translateX(-50px); /* Przesunięcie ikony w lewo na hover */
+	}
+	.phoneContainer:hover .number {
+		opacity: 1; /* Numer staje się widoczny */
+		transform: translateX(0); /* Numer pojawia się obok ikony */
 	}
 }
 
@@ -104,24 +142,21 @@ body {
 	}
 }
 
-.section-title {
+.sectionTitle {
 	text-align: center;
-	padding: 2em;
+	margin-top: 3em;
 	text-transform: uppercase;
 	font-size: 2rem;
 	color: #fff;
 }
 
-.news {
-	margin-top: 2em;
-	background-color: #333;
-}
+
 
 .newsCard {
 	position: fixed;
-	bottom: 20%;
-	left: 10px;
 	text-align: center;
+	right: 10px;
+	bottom: 140px;
 	margin: auto;
 	height: 5rem;
 	width: 22rem;
@@ -129,8 +164,8 @@ body {
 	border-radius: 15px;
 	background-color: #333;
 	color: #fff;
+	z-index: 20;
 }
-
 
 .feed-info {
 	text-align: center;
@@ -157,7 +192,7 @@ body {
 	z-index: 20;
 
 	img {
-		padding: 0.5em;
+		padding: 1em;
 	}
 }
 
@@ -167,7 +202,7 @@ body {
 	// opacity: 0;
 	justify-content: center;
 	align-items: center;
-	bottom: 95px;
+	bottom: 90px;
 	right: 50px;
 	height: 2em;
 	width: 2em;
@@ -195,6 +230,14 @@ body {
 }
 
 @media (min-width: 768px) {
+	.sectionTitle {
+		font-size: 2.4rem;
+	}
+	.newsCard {
+		right: 20px;
+		width: 30rem;
+	}
+
 	.navList {
 		.nav-ul {
 			&__item {
@@ -205,6 +248,9 @@ body {
 }
 
 @media (min-width: 992px) {
+	.sectionTitle {
+		font-size: 2.7rem;
+	}
 	nav {
 		.logoContainer {
 			height: 80%;
@@ -234,6 +280,9 @@ body {
 }
 
 @media (min-width: 1200px) {
+	.sectionTitle {
+		font-size: 2.9rem;
+	}
 	nav {
 		.burgerBtn {
 			margin-right: 1.5em;
