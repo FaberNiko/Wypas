@@ -17,21 +17,23 @@ export default function News() {
 		setIsClicked(!isClicked);
 	};
 
-	if (loading) return <p>Loading...</p>;
-	if (error) return <button className="newsButton" onClick={handleClick}>
-	<img src={Message} alt="Message icon" />
-	{data.length > 0 && ( 
-		<div className="messageCounterContainer">
-			<p className="counter">{data.length}</p>
-		</div>
-	)}
-</button>;
+	if (error || loading)
+		return (
+			<button className="newsButton" onClick={handleClick}>
+				<img src={Message} alt="Message icon" />
+				{data.length > 0 && (
+					<div className="messageCounterContainer">
+						<p className="counter">{data.length}</p>
+					</div>
+				)}
+			</button>
+		);
 
 	return (
 		<>
 			<button className="newsButton" onClick={handleClick}>
 				<img src={Message} alt="Message icon" />
-				{data.length > 0 && ( 
+				{data.length > 0 && (
 					<div className="messageCounterContainer">
 						<p className="counter">{data.length}</p>
 					</div>
@@ -42,7 +44,7 @@ export default function News() {
 					data.map(feed => (
 						<motion.div
 							initial={{ opacity: 0, x: 30, y: 30 }}
-							animate={{ opacity: 1, x: 0,y: 0 }}
+							animate={{ opacity: 1, x: 0, y: 0 }}
 							exit={{ opacity: 0, x: 10, y: 10 }}
 							key={feed.id}
 							className="newsCard">
