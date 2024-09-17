@@ -18,7 +18,14 @@ export default function News() {
 	};
 
 	if (loading) return <p>Loading...</p>;
-	if (error) return <p>Coś poszło nie tak</p>;
+	if (error) return <button className="newsButton" onClick={handleClick}>
+	<img src={Message} alt="Message icon" />
+	{data.length > 0 && ( 
+		<div className="messageCounterContainer">
+			<p className="counter">{data.length}</p>
+		</div>
+	)}
+</button>;
 
 	return (
 		<>

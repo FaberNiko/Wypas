@@ -17,7 +17,7 @@ export default function MonthlyBurger({ link }) {
 
 	const heroImageUrl = data.length > 0 
     ? `http://localhost:1337${data[0].attributes.Image.data.attributes.url}`
-    : ''; // Pusty string, jeśli brak danych
+    : ''; 
 
 	return (
 		<section id="monthly">
