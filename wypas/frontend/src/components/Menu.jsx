@@ -4,7 +4,8 @@ import chili from "../images/chili.png";
 import vegan from "../images/leaf.png";
 import { useState } from "react";
 import Trimmings from "./Trimmings.jsx";
-import { useTranslation,Trans } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
+import { motion } from "framer-motion";
 
 export default function Menu() {
 	const { t } = useTranslation();
@@ -16,7 +17,11 @@ export default function Menu() {
 
 	let tabContent = (
 		<>
-			<div className={styles.menuItems}>
+			<motion.div
+				className={styles.menuItems}
+				initial={{ x: -100, opacity: 0 }}
+				animate={{ x: 0, opacity: 1 }}
+				transition={{ type: "tween" }}>
 				<MenuList title={"KLASYK"} desc={t("klasyk_desc")} price={23} />
 				<MenuList title={"CHEDDAR"} desc={t("cheddar_desc")} price={25} />
 				<MenuList title={"BEKON"} desc={t("bekon_desc")} price={28} />
@@ -43,11 +48,11 @@ export default function Menu() {
 					icons={[vegan]}
 				/>
 				<MenuList title={t("month_burger")} price={29} />
-			</div>
-			<p className={styles.trimmings} >
+			</motion.div>
+			<p className={styles.trimmings}>
 				<Trans i18nKey="trimmings_text">
-				<span>buttered roll</span>
-				<span>sesame seed roll</span>
+					<span>buttered roll</span>
+					<span>sesame seed roll</span>
 				</Trans>
 			</p>
 		</>
@@ -59,23 +64,36 @@ export default function Menu() {
 
 	return (
 		<section id="menu" className={styles.menu}>
-			<h2 className={styles.menuTitle}>menu</h2>
-			<div className={styles.buttons}>
-				<button
+			<motion.h2
+				className={styles.menuTitle}
+				initial={{ opacity: 0, x: -30 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ type: "spring" }}>
+				menu
+			</motion.h2>
+			<motion.div
+				className={styles.buttons}
+				initial={{ opacity: 0, x: 50 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ type: "spring" }}>
+				
+				<motion.button
 					className={` ${styles.button} ${
 						selectedTopic === "burgers" ? `${styles.active}` : ""
 					}`}
-					onClick={() => handleSelect("burgers")}>
+					onClick={() => handleSelect("burgers")}
+					whileTap={{ scale: 0.85 }}>
 					{t("burgers")}
-				</button>
-				<button
+				</motion.button>
+				<motion.button
 					className={`${styles.button} ${
 						selectedTopic === "trimmings" ? `${styles.active}` : ""
 					}`}
-					onClick={() => handleSelect("trimmings")}>
+					onClick={() => handleSelect("trimmings")}
+					whileTap={{ scale: 0.85 }}>
 					{t("trimmings")}
-				</button>
-			</div>
+				</motion.button>
+			</motion.div>
 			{tabContent}
 		</section>
 	);

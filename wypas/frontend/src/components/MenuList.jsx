@@ -1,9 +1,14 @@
 import styles from "./MenuList.module.scss";
+import { motion } from "framer-motion";
 
 export default function MenuList({ title, desc, price, icons }) {
 	return (
 		<ul className={styles.list}>
-			<li className={styles.listItem}>
+			<motion.li
+				className={styles.listItem}
+				initial={{ opacity: 0, x: -30 }}
+				whileInView={{ opacity: 1, x: 0 }}
+				transition={{ type: "spring", duration: 1, delay: .2 }}>
 				<p className={styles.title}>{title}</p>
 				<div className={styles.menuIcons}>
 					{icons &&
@@ -14,7 +19,7 @@ export default function MenuList({ title, desc, price, icons }) {
 				<p className={styles.description}>{desc}</p>
 				<p className={styles.price}>{price}zł</p>
 				<div className={styles.menuIcons}></div>
-			</li>
+			</motion.li>
 		</ul>
 	);
 }

@@ -6,6 +6,7 @@
 
 .trimmingsSection {
 	width: 100%;
+	overflow: hidden;
 
 	.trimmingsTitle {
 		padding-top: 1.5em;
@@ -28,25 +29,25 @@
 			list-style: none;
 
 			.trimmingsItem {
-                padding: 1em;
-                color: #fff;
-                text-align: center;
-                border-top: 1px solid white;
+				padding: 1em;
+				color: #fff;
+				text-align: center;
+				border-top: 1px solid white;
 				.trimmingTitle {
-                    font-size: 1.8rem;
+					font-size: 1.8rem;
 					font-weight: bold;
-                    text-transform: uppercase;
+					text-transform: uppercase;
 				}
-                
+
 				.info {
-                    margin-top: 0.5em;
-                    font-size: 1.4rem;
+					margin-top: 0.5em;
+					font-size: 1.4rem;
 					color: #ff5757;
 				}
-                
+
 				.trimmingsPrice {
-                    margin-top: 0.5em;
-                    padding: 0.5em;
+					margin-top: 0.5em;
+					padding: 0.5em;
 					text-align: center;
 					color: #fff;
 					font-size: 2rem;
@@ -57,7 +58,6 @@
 }
 
 @media (min-width: 772px) {
-
 	.trimmingsSection {
 		.container {
 			.trimmingsList {

@@ -2,6 +2,7 @@ import styles from "./MonthlyBurger.module.scss";
 import { useTranslation } from "react-i18next";
 import useFetch from "../hooks/useFetch";
 import imageUrl from "../images/sliwka.jpg";
+import { motion } from "framer-motion";
 export default function MonthlyBurger({ link }) {
 	const { i18n, t } = useTranslation(); // Pobieranie funkcji tłumaczeń oraz informacji o języku
 	// const locale = i18n.language;
@@ -23,26 +24,42 @@ export default function MonthlyBurger({ link }) {
 			<div className={styles.heroBg}>
 				{/* style={{ backgroundImage: `url(${heroImageUrl})` }} */}
 				<div className={styles.heroShadow}></div>
-				<h2 className="sectionTitle">{t("month_burger")}</h2>
+				<motion.h2
+					className="sectionTitle"
+					initial={{ opacity: 0, x: 30 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					transition={{ type: "spring" }}>
+					{t("month_burger")}
+				</motion.h2>
 				{/* {data.map(burger => { */}
 				{/* // const imageUrl = `http://localhost:1337${burger.attributes.Image.data.attributes.url}`; */}
 
 				{/* return ( */}
 				<div className={styles.content}>
 					{/* key={burger.id} */}
-					<img src={imageUrl} alt="Photo of burger" />
+					<motion.img
+						src={imageUrl}
+						alt="Photo of burger"
+						initial={{ opacity: 0, x: -30 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring" }}
+					/>
 					<div className={styles.infoContainer}>
 						<p className={styles.name}></p>
 						{/* //{burger.attributes.Title}// */}
-						<p className={styles.info} >
-							{t("desc")} 
+						<motion.p
+							className={styles.info}
+							initial={{ opacity: 0, x: 30 }}
+							whileInView={{ opacity: 1, x: 0 }}
+							transition={{ type: "spring" }}>
+							{t("desc")}
 							<br />
 							{/* {burger.attributes.Description.substring(0, 200)}... */}
 							<a href={link} target="_blank" rel="noopener noreferrer">
 								{" "}
 								{t("read_more")}
 							</a>
-						</p>
+						</motion.p>
 					</div>
 				</div>
 				{/* ); */}
