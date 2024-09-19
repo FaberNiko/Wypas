@@ -11,6 +11,8 @@ i18n
 			en: {
 				translation: {
 					home: "Home",
+					events: "Events",
+					eventDesc: `The grazing is coming to you! 🚗🚙 Even though one of our food trucks is always waiting for you at ul. Targowa in Kalwaria, the latter goes out into the world to celebrate various events and events with burgers 🎈 If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone 📞730 925 570, e-mail 📧burgerwypas@gmail.com or on Messenger 💬 All rental conditions and costs will be determined individually based on the location, event type and other event details. The service was developed as part of the "Success Vouchers" project 🎟️`,
 					menu: "Menu",
 					month_burger: "Burger of the Month",
 					contact: "Contact",
@@ -63,6 +65,8 @@ i18n
 			pl: {
 				translation: {
 					home: "strona główna",
+					events: "Eventy",
+					eventDesc: `Wypas zbliża się do Ciebie! 🚗🚙 Mimo, że jeden z naszych food trucków zawsze czeka na Was przy ul. Targowej w Kalwarii, ta ostatnia wyrusza w świat, aby celebrować różne wydarzenia i eventy burgerami 🎈 Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swoją imprezę lub masz inne propozycje współpracy, skontaktuj się z nami telefonicznie 📞730 925 570, e- mailowo 📧burgerwypas@gmail.com lub na Messengerze 💬 Wszystkie warunki wynajmu oraz koszty zostaną ustalone indywidualnie w oparciu o lokalizację, rodzaj wydarzenia i inne szczegóły wydarzenia. Usługa powstała w ramach projektu „Bony Sukcesu” 🎟️`,
 					menu: "menu",
 					month_burger: "burger miesiąca",
 					contact: "kontakt",

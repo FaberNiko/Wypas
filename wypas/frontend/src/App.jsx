@@ -1,5 +1,6 @@
 import "./App.scss";
 import Contact from "./components/Contact.jsx";
+import { Events } from "./components/Events.jsx";
 import Footer from "./components/Footer.jsx";
 import Header from "./components/Header.jsx";
 import Menu from "./components/Menu.jsx";
@@ -44,6 +45,7 @@ function App() {
 		<>
 			<Navbar isScrolled={isScrolled}/>
 			<Header />
+			<Events/>
 			<News/>
 			<Menu/>
 			<MonthlyBurger />

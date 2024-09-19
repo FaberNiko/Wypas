@@ -1,0 +1,84 @@
+.eventsSection {
+	background-color: #050505;
+    overflow: hidden;
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+		padding: 2em 1em;
+		.photoBox {
+			height: 19rem;
+			margin: 0 1em;
+
+			img {
+				height: 100%;
+                padding: 1em;
+                width: auto;
+			}
+		}
+		.textBox {
+			padding: 1em;
+            width: 20rem;
+			text-align: center;
+			font-size: 0.9rem;
+			color: #fff;
+            line-height: 2rem;
+		}
+	}
+}
+
+@media (min-width: 772px) {
+    .eventsSection {
+        .container {
+            .photoBox {
+                height: 25rem;
+            }
+
+            .textBox {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .eventsSection {
+        .container {
+            .photoBox {
+                height: 30rem;
+            }
+
+            .textBox {
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .eventsSection {
+        .container {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (min-width :1400px) {
+    .eventsSection {
+        padding: 2em;
+        .container {
+            position: relative;
+            .photoBox {
+                height: 35rem;
+                margin: 1rem;
+            }
+            .textBox {
+                width: 50%;
+                font-size: 1.1rem;
+            }
+           
+        }
+    }
+}
