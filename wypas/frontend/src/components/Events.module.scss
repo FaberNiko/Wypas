@@ -64,7 +64,13 @@
     .eventsSection {
         .container {
             flex-direction: row;
+
+            .textBox {
+                line-height: 2.5;
+            }
         }
+
+        
     }
 }
 
