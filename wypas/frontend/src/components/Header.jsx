@@ -25,12 +25,19 @@ export default function Header() {
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ type: "spring", duration: 1 }}
 					/>
+					<motion.div
+						className={styles.aboutText}
+						initial={{ opacity: 0, y: -100 }}
+						whileInView={{ opacity: 1, y: 0 }}
+						transition={{ type: "spring", duration: 1 }}>
+						{t("headerTxt")}
+					</motion.div>
 					<motion.a
 						href="#menu"
 						className={styles.menuButton}
 						initial={{ opacity: 0, x: -100 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ type: "spring", duration: 1.5  }}>
+						transition={{ type: "spring", duration: 1.5 }}>
 						{t("show_menu")}
 					</motion.a>
 					{/* <div className={styles.icons}>

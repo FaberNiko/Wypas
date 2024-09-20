@@ -11,6 +11,7 @@ i18n
 			en: {
 				translation: {
 					home: "Home",
+					headerTxt: "Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
 					events: "Events",
 					eventDesc: `One of our food trucks is waiting for you every day at ul. Targowa in Kalwaria, but our second one is waiting to go to you so that he can decorate various events and events with burgers! If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone or e-mail. Rental conditions and costs are determined individually based on the details of the event.`,
 					menu: "Menu",
@@ -65,6 +66,7 @@ i18n
 			pl: {
 				translation: {
 					home: "strona główna",
+					headerTxt: "Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
 					events: "Eventy",
 					eventDesc: `Jeden z naszych food trucków codziennie czeka na Was na Ul. Targowej w Kalwarii, jednak nasz drugi czeka aby wyrusza do was, by móc uświetnić burgerami najróżniejsze wydarzenia i imprezy! Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swój event lub masz inne propozycje współpracy zapraszamy do kontaktu telefonicznego lub mailowego. Warunki i koszty wynajmu ustalane są indywidualnie w oparciu o szczegóły  wydarzenia.`,
 					menu: "menu",

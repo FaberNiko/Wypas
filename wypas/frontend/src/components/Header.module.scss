@@ -26,8 +26,16 @@
 				border-radius: 50%;
 			}
 
+			.aboutText {
+				text-align: center;
+				padding: 1em;
+				margin: 0 1rem 1rem 1rem;
+				font-size: 0.9rem;
+				color: #cecdcd;
+			}
+
 			.menuButton {
-				margin-bottom: 2em;
+				margin-bottom: 3rem;
 				text-transform: uppercase;
 				text-decoration: none;
 				color: #fff;
@@ -55,6 +63,11 @@
 					height: 30rem;
 				}
 
+				.aboutText {
+					padding: 0 4em;
+					font-size: 1.1rem;
+				}
+
 				.menuButton {
 					font-size: 1rem;
 				}
@@ -69,6 +82,11 @@
 			.content {
 				.logo {
 					height: 35rem;
+				}
+
+				.aboutText {
+					padding: 0 6em;
+					margin: 0 2rem 2rem 2rem;
 				}
 				.menuButton {
 					font-size: 1.1rem;
@@ -105,9 +123,15 @@
 				.logo {
 					height: 40rem;
 				}
+
+				.aboutText {
+					padding: 0 8em;
+					line-height: 2;
+					margin: 0 4rem 2rem 4rem;
+				}
 				.menuButton {
-					margin-bottom: 5em;
-					font-size: 1.2rem;
+					margin-bottom: 5.5em;
+					font-size: 1.1rem;
 				}
 			}
 		}
@@ -116,15 +140,11 @@
 
 @media (min-width: 1400px) {
 	.header {
-	
-
-	.textWrapper {
-		
-		.text {
-			font-size: 10rem;
-			
+		.textWrapper {
+			.text {
+				font-size: 10rem;
+			}
 		}
-	}
 		.hero {
 			.content {
 				padding: 4em;
@@ -132,9 +152,13 @@
 					height: 45rem;
 				}
 
+				.aboutText {
+					padding: 0 18em;
+					margin: 0 6rem 2rem 6rem;
+				}
+
 				.menuButton {
 					margin-bottom: 5.5em;
-					font-size: 1.2rem;
 				}
 			}
 		}
