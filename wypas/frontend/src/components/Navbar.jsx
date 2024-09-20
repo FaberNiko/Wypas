@@ -53,6 +53,11 @@ export default function Navbar(isScrolled) {
 						</a>
 					</li>
 					<li className="nav-ul__item">
+						<a href="#events" className="nav-item" onClick={handleClick}>
+							{t("events")}
+						</a>
+					</li>
+					<li className="nav-ul__item">
 						<a href="#menu" className="nav-item" onClick={handleClick}>
 							menu
 						</a>

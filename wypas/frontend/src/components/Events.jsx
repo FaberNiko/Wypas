@@ -15,13 +15,14 @@ export const Events = () => {
 				{t("events")}
 			</motion.h2>
 			<div className={styles.container}>
-				<motion.div
-					className={styles.photoBox}
+				<motion.img
+					src={eventImg}
+					alt="Photo of Wypas Burger foodtruck"
 					initial={{ opacity: 0, x: -30 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring" }}>
-					<img src={eventImg} alt="Photo of Wypas Burger foodtruck" />
-				</motion.div>
+					transition={{ type: "spring" }}
+				/>
+
 				<motion.div
 					className={styles.textBox}
 					initial={{ opacity: 0, x: 50 }}

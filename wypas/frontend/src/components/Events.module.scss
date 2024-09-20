@@ -8,16 +8,15 @@
 		justify-content: center;
 
 		padding: 2em 1em;
-		.photoBox {
-			height: 19rem;
-			margin: 0 1em;
+		
 
 			img {
-				height: 100%;
-                padding: 1em;
-                width: auto;
+                object-fit: cover;
+                height: 20rem;
+                width: 20rem;
+                border: 5px solid white;
+                border-radius: 50%;
 			}
-		}
 		.textBox {
 			padding: 1em;
             width: 20rem;
@@ -32,11 +31,13 @@
 @media (min-width: 772px) {
     .eventsSection {
         .container {
-            .photoBox {
+            img {
                 height: 25rem;
+                width: 25rem;
             }
 
             .textBox {
+                width: 25rem;
                 font-size: 1rem;
             }
         }
@@ -46,12 +47,14 @@
 @media (min-width: 992px) {
     .eventsSection {
         .container {
-            .photoBox {
+            img {
                 height: 30rem;
+                width: 30rem;
             }
 
             .textBox {
                 width: 80%;
+                font-size: 1.1rem;
             }
         }
     }
@@ -70,8 +73,9 @@
         padding: 2em;
         .container {
             position: relative;
-            .photoBox {
+            img {
                 height: 35rem;
+                width: 35rem;
                 margin: 1rem;
             }
             .textBox {
