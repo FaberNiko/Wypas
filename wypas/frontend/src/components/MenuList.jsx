@@ -1,14 +1,10 @@
 import styles from "./MenuList.module.scss";
 import { motion } from "framer-motion";
 
-export default function MenuList({ title, desc, price, icons }) {
+export default function MenuList({ title, desc, price, icons, miniPrice }) {
 	return (
 		<ul className={styles.list}>
-			<motion.li
-				className={styles.listItem}
-				initial={{ opacity: 0, x: -30 }}
-				whileInView={{ opacity: 1, x: 0 }}
-				transition={{ type: "spring", duration: 1, delay: .2 }}>
+			<li className={styles.listItem}>
 				<p className={styles.title}>{title}</p>
 				<div className={styles.menuIcons}>
 					{icons &&
@@ -18,8 +14,9 @@ export default function MenuList({ title, desc, price, icons }) {
 				</div>
 				<p className={styles.description}>{desc}</p>
 				<p className={styles.price}>{price}zł</p>
+				{miniPrice && <p className={styles.price}>{miniPrice}zł</p>}
 				<div className={styles.menuIcons}></div>
-			</motion.li>
+			</li>
 		</ul>
 	);
 }

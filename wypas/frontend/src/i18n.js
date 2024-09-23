@@ -11,7 +11,8 @@ i18n
 			en: {
 				translation: {
 					home: "Home",
-					headerTxt: "Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
+					headerTxt:
+						"Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
 					events: "Events",
 					eventDesc: `One of our food trucks is waiting for you every day at ul. Targowa in Kalwaria, but our second one is waiting to go to you so that he can decorate various events and events with burgers! If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone or e-mail. Rental conditions and costs are determined individually based on the details of the event.`,
 					menu: "Menu",
@@ -43,6 +44,9 @@ i18n
 						"200g beef / cheddar / chorizo / nachos / lettuce / pickles / tomato / red onion / honey mustard sauce",
 					vege_desc:
 						"beet patty / arugula / tomato / red onion / sunflower seeds / cranberry sauce / remoulade sauce",
+					mini_burgers: "Mini burgers",
+					mini_burgers_desc:
+						"In the mini option, you can order any of our burgers in any quantity at least 2 days in advance",
 					trimmings_text:
 						"Choice of <0>brioche bun</0> or <1>sesame seed bun</1>",
 					belgian_fries: "belgian french fries",
@@ -61,12 +65,14 @@ i18n
 					sat: "sat",
 					sun: "sun",
 					read_more: "Read more",
+					other: "Other burgers (beside WYPAS)"
 				},
 			},
 			pl: {
 				translation: {
 					home: "strona główna",
-					headerTxt: "Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
+					headerTxt:
+						"Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
 					events: "Eventy",
 					eventDesc: `Jeden z naszych food trucków codziennie czeka na Was na Ul. Targowej w Kalwarii, jednak nasz drugi czeka aby wyrusza do was, by móc uświetnić burgerami najróżniejsze wydarzenia i imprezy! Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swój event lub masz inne propozycje współpracy zapraszamy do kontaktu telefonicznego lub mailowego. Warunki i koszty wynajmu ustalane są indywidualnie w oparciu o szczegóły  wydarzenia.`,
 					menu: "menu",
@@ -98,6 +104,9 @@ i18n
 						"wołowina 200g / cheddar / chorizzo / nachosy / sałata / pikle / pomidor / cebula czerwona / sos miodowo-musztardowy",
 					vege_desc:
 						"kotlet buraczany / rukola / pomidor / cebula czerwona / nasiona słonecznika / sos żurawinowy / sos remulada",
+					mini_burgers: "Mini burgery",
+					mini_burgers_desc:
+						"W opcji mini możecie zamówić każdego z naszych burgerów w dowolnej ilości z minimum 2 dnjiowych wyprzedzeniem",
 					trimmings_text:
 						"Do wyboru <0>bułka maślana</0> lub <1>bułka z sezamem</1>",
 					belgian_fries: "frytki belgijskie",
@@ -115,6 +124,7 @@ i18n
 					sat: "sb",
 					sun: "nd",
 					read_more: "Czytaj więcej",
+					other: "Pozostałe (poza burgerem WYPAS)"
 				},
 			},
 		},

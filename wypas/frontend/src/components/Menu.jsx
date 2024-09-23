@@ -48,6 +48,13 @@ export default function Menu() {
 					icons={[vegan]}
 				/>
 				<MenuList title={t("month_burger")} price={29} />
+				<MenuList
+					title={t("mini_burgers")}
+					desc={t("mini_burgers_desc")}
+					price={"KLASYK / CHEDDAR 11"}
+					miniPrice={`${t("other")} 12`}
+					
+				/>
 			</motion.div>
 			<p className={styles.trimmings}>
 				<Trans i18nKey="trimmings_text">
@@ -76,7 +83,6 @@ export default function Menu() {
 				initial={{ opacity: 0, x: 50 }}
 				whileInView={{ opacity: 1, x: 0 }}
 				transition={{ type: "spring" }}>
-				
 				<motion.button
 					className={` ${styles.button} ${
 						selectedTopic === "burgers" ? `${styles.active}` : ""

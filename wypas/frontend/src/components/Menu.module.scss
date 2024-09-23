@@ -52,7 +52,9 @@
 	.trimmings {
 		color: #fff;
 		margin: 1em;
-		padding-bottom: 2em;
+		padding: 1em;
+		// width: 100%;
+		border-top: 1px solid white;
 		text-align: center;
 		letter-spacing: 2px;
 		line-height: 2;
@@ -112,10 +114,14 @@
 		position: relative;
 		width: 100%;
 
-		width: 100%;
 	}
 
 	.menuTitle {
 		margin-bottom: 1em;
+	}
+
+
+	.trimmings {
+		width: 50%;
 	}
 }
