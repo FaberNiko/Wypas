@@ -8,9 +8,7 @@ import MonthlyBurger from "./components/MonthlyBurger.jsx";
 import Navbar from "./components/Navbar.jsx";
 import News from "./components/News.jsx";
 import { useEffect, useState } from "react";
-
-
-
+import { About } from "./components/About.jsx";
 function App() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	useEffect(() => {
@@ -22,7 +20,7 @@ function App() {
 			}
 		};
 
-		const handleClickOutside = (event) => {
+		const handleClickOutside = event => {
 			if (
 				navListRef.current &&
 				!navListRef.current.contains(event.target) &&
@@ -43,14 +41,15 @@ function App() {
 	}, []);
 	return (
 		<>
-			<Navbar isScrolled={isScrolled}/>
+			<Navbar isScrolled={isScrolled} />
 			<Header />
-			<Events/>
-			<News/>
-			<Menu/>
+			<About />
+			<Events />
+			<News />
+			<Menu />
 			<MonthlyBurger />
-			<Contact/>
-			<Footer/>
+			<Contact />
+			<Footer />
 		</>
 	);
 }

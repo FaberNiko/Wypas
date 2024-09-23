@@ -11,6 +11,7 @@ i18n
 			en: {
 				translation: {
 					home: "Home",
+					about: "About us",
 					headerTxt:
 						"Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
 					events: "Events",
@@ -66,12 +67,14 @@ i18n
 					sun: "sun",
 					read_more: "Read more",
 					other: "Other burgers (beside WYPAS)",
-					delivery: "FREE delivery for orders from PLN 50 up to 10 km"
+					delivery: "FREE delivery for orders from PLN 50 up to 10 km",
+					
 				},
 			},
 			pl: {
 				translation: {
 					home: "strona główna",
+					about: "O nas",
 					headerTxt:
 						"Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
 					events: "Eventy",
