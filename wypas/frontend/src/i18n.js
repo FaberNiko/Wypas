@@ -65,7 +65,8 @@ i18n
 					sat: "sat",
 					sun: "sun",
 					read_more: "Read more",
-					other: "Other burgers (beside WYPAS)"
+					other: "Other burgers (beside WYPAS)",
+					delivery: "FREE delivery for orders from PLN 50 up to 10 km"
 				},
 			},
 			pl: {
@@ -124,7 +125,8 @@ i18n
 					sat: "sb",
 					sun: "nd",
 					read_more: "Czytaj więcej",
-					other: "Pozostałe (poza burgerem WYPAS)"
+					other: "Pozostałe (poza burgerem WYPAS)",
+					delivery: "Dawóz GRATIS dla zamówień od 50 zł do 10km",
 				},
 			},
 		},
