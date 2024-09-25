@@ -13,7 +13,7 @@ export default function Contact() {
 				className="sectionTitle"
 				initial={{ opacity: 0, x: -30 }}
 				whileInView={{ opacity: 1, x: 0 }}
-				transition={{ type: "spring" }}>
+				transition={{ type: "tween" }}>
 				{t("contact")}
 			</motion.h2>
 			<div className={styles.container}>
@@ -22,19 +22,19 @@ export default function Contact() {
 					className={styles.logo}
 					initial={{ opacity: 0, x: 30 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring" }}></motion.img>
+					transition={{ type: "tween" }}></motion.img>
 				<motion.p
 					className={styles.delivery}
 					initial={{ opacity: 0, x: 30 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring" }}>
+					transition={{ type: "tween" }}>
 					{t("delivery")}
 				</motion.p>
 				<motion.div
 					className={styles.info}
 					initial={{ opacity: 0, x: -30 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring" }}>
+					transition={{ type: "tween" }}>
 					<p className={styles.infoItem}>tel: +48 730 925 570</p>
 					<p className={styles.infoItem}>email:</p>
 					<p className={styles.infoItem}>burgerwypas@gmail.com</p>
@@ -46,7 +46,7 @@ export default function Contact() {
 					className={styles.hours}
 					initial={{ opacity: 0, x: 30 }}
 					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring" }}>
+					transition={{ type: "tween" }}>
 					<p className={styles.listName}>{t("hours")}</p>
 					<ul>
 						<li>

@@ -85,7 +85,7 @@ body {
 	// right: 0;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	// align-items: center;
 	transform: translateX(-100%);
 	height: 100vh;
 	width: 80%;
@@ -98,7 +98,8 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
+		margin-left: 1em;
 		list-style: none;
 		flex-grow: 1;
 		&__item {
@@ -106,7 +107,7 @@ body {
 			text-align: center;
 			font-size: 1rem;
 			padding: 1em;
-			margin: 1em 0;
+			margin: .5em 0;
 			letter-spacing: 2px;
 
 			.nav-item {
@@ -120,7 +121,7 @@ body {
 	.languages {
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: center;
 
 		.language {
 			background: transparent;
@@ -145,8 +146,7 @@ body {
 
 .sectionTitle {
 	text-align: center;
-	padding-top: 1em;
-	margin-top: 2em;
+	padding-top: 2.7em;
 	text-transform: uppercase;
 	font-size: 2rem;
 	color: #fff;
@@ -312,7 +312,7 @@ body {
 				&::before {
 					position: absolute;
 					top: 0;
-					left: -30px;
+					left:  -5px;
 					width: 3px;
 					height: 100%;
 					transform: scaleY(0);

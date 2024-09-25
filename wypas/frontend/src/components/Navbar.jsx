@@ -6,6 +6,7 @@ import { useEffect, useState, useRef } from "react";
 import { Turn as Hamburger } from "hamburger-react";
 import { useTranslation } from "react-i18next";
 import phone from "../images/phone.png";
+import { motion } from "framer-motion";
 
 export default function Navbar(isScrolled) {
 	const [menuOpen, setMenuOpen] = useState(false);
@@ -47,31 +48,60 @@ export default function Navbar(isScrolled) {
 			</nav>
 			<div className={`navList ${menuOpen ? "active" : ""}`} ref={navListRef}>
 				<ul className="nav-ul">
-					<li className="nav-ul__item">
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -30 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
 						<a href="#" className="nav-item" onClick={handleClick}>
 							{t("home")}
 						</a>
-					</li>
-					<li className="nav-ul__item">
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -40 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
+						<a href="#about" className="nav-item" onClick={handleClick}>
+							{t("about")}
+						</a>
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -50 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
 						<a href="#events" className="nav-item" onClick={handleClick}>
 							{t("events")}
 						</a>
-					</li>
-					<li className="nav-ul__item">
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -60 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
 						<a href="#menu" className="nav-item" onClick={handleClick}>
 							menu
 						</a>
-					</li>
-					<li className="nav-ul__item">
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -70 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
 						<a href="#monthly" className="nav-item" onClick={handleClick}>
 							{t("month_burger")}
 						</a>
-					</li>
-					<li className="nav-ul__item">
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -80 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
 						<a href="#contact" className="nav-item" onClick={handleClick}>
 							{t("contact")}
 						</a>
-					</li>
+					</motion.li>
 				</ul>
 				<div className="languages">
 					<button className="language" onClick={() => changeLanguage("pl")}>

@@ -42,7 +42,7 @@ export default function MonthlyBurger({ link }) {
 						alt="Photo of burger"
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ type: "spring" }}
+						transition={{ type: "tween" }}
 					/>
 					<div className={styles.infoContainer}>
 						<p className={styles.name}></p>
@@ -51,7 +51,7 @@ export default function MonthlyBurger({ link }) {
 							className={styles.info}
 							initial={{ opacity: 0, x: 30 }}
 							whileInView={{ opacity: 1, x: 0 }}
-							transition={{ type: "spring" }}>
+							transition={{ type: "tween" }}>
 							{t("desc")}
 							<br />
 							{/* {burger.attributes.Description.substring(0, 200)}... */}
