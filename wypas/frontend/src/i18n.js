@@ -77,6 +77,9 @@ i18n
 					about: "O nas",
 					headerTxt:
 						"Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
+					about1: `Jesteśmy trzykrotnymi laureatami konkursu "Orły Gastronomi" `,
+					about2: `Działamy od 2018 roku i stale szukamy nowych smaków `,
+					about3: `Tworzymy burgery z pasją i zamiłowaniem do smaku! `,
 					events: "Eventy",
 					eventDesc: `Jeden z naszych food trucków codziennie czeka na Was na Ul. Targowej w Kalwarii, jednak nasz drugi czeka aby wyruszyć do was, by móc uświetnić burgerami najróżniejsze wydarzenia i imprezy! Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swój event lub masz inne propozycje współpracy zapraszamy do kontaktu telefonicznego lub mailowego. Warunki i koszty wynajmu ustalane są indywidualnie w oparciu o szczegóły  wydarzenia.`,
 					menu: "menu",

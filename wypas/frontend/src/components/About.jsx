@@ -15,8 +15,8 @@ export const About = () => {
 			<div className={styles.container}>
 				<motion.div
 					className={styles.card}
-					initial={{ opacity: 0, y: -30 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ opacity: 0, x: -30 }}
+					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ type: "spring", duration: 1.5 }}>
 					<div className={styles.imgBox}>
 						<img
@@ -26,16 +26,13 @@ export const About = () => {
 						/>
 					</div>
 					<p className={styles.text}>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-						eum quaerat blanditiis velit, dolore quo vitae. Illo voluptas minima
-						modi, repellat facilis hic nihil perferendis omnis, saepe odio
-						laboriosam consectetur?
+					{t('about1')}
 					</p>
 				</motion.div>
 				<motion.div
 					className={styles.card}
-					initial={{ opacity: 0, y: -30 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ opacity: 0, x: -30 }}
+					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ type: "spring", duration: 1.5 }}>
 					<div className={styles.imgBox}>
 						<img
@@ -45,16 +42,13 @@ export const About = () => {
 						/>
 					</div>
 					<p className={styles.text}>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-						eum quaerat blanditiis velit, dolore quo vitae. Illo voluptas minima
-						modi, repellat facilis hic nihil perferendis omnis, saepe odio
-						laboriosam consectetur?
+					{t('about2')}
 					</p>
 				</motion.div>
 				<motion.div
 					className={styles.card}
-					initial={{ opacity: 0, y: -30 }}
-					whileInView={{ opacity: 1, y: 0 }}
+					initial={{ opacity: 0, x: -30 }}
+					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ type: "spring", duration: 1.5 }}>
 					<div className={styles.imgBox}>
 						<img
@@ -64,10 +58,7 @@ export const About = () => {
 						/>
 					</div>
 					<p className={styles.text}>
-						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
-						eum quaerat blanditiis velit, dolore quo vitae. Illo voluptas minima
-						modi, repellat facilis hic nihil perferendis omnis, saepe odio
-						laboriosam consectetur?
+					{t('about3')}
 					</p>
 				</motion.div>
 			</div>
