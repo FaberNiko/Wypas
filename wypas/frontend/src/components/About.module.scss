@@ -1,37 +1,50 @@
 .aboutSection {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
 	.container {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		// padding: 1.5em 0;
-		padding: 2em 1em;
+		margin-top: 2em;
+		width: 22rem;
 
 		.card {
 			display: flex;
 			justify-content: center;
 			align-items: center;
 			flex-direction: column;
-			padding: 2em;
-			width: 100%;
-			margin: 1em 0;
+			margin: 0.2em;
 			background-color: #020202;
 			border-radius: 15px;
-			.imgBox {
-				height: 13rem;
-				width: 16rem;
-				.eaglesImg {
-					border-radius: 15px;
-					height: 100%;
-					width: 100%;
-				}
+			.eaglesImg {
+				border-radius: 15px;
+				width: 6rem;
 			}
+		}
+	}
+	.text {
+		text-align: center;
+		margin: 0.5em;
+		padding: 1em;
+		line-height: 2em;
+		color: #fff;
+	}
 
-			.text {
-				text-align: center;
-				margin-top: 0.5em;
-				padding: 1em;
-				color: #fff;
+	.rate {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		color: #333;
+		a {
+			position: relative;
+			font-size: 4.5rem;
+			color: goldenrod;
+			text-decoration: none;
+			.starImg {
+				position: absolute;
 			}
 		}
 	}
@@ -41,68 +54,70 @@
 	.aboutSection {
 		.container {
 			.card {
-				.imgBox {
-					height: 18rem;
-					width: 21rem;
-					.eaglesImg {
-						border-radius: 25px;
-					}
-				}
-
-				.text {
-					padding: 1em 2em;
+				.eaglesImg {
+					width: 7rem;
 				}
 			}
+		}
+
+		.text {
+			margin: 0 4em;
 		}
 	}
 }
 @media (min-width: 992px) {
 	.aboutSection {
 		.container {
+			justify-content: space-evenly;
+			width: 28rem;
 			.card {
-				flex-direction: row;
-				justify-content: space-evenly;
-				.imgBox {
-					height: 18rem;
-					width: 21rem;
-					.eaglesImg {
-						border-radius: 25px;
-					}
+				.eaglesImg {
+					width: 8.5rem;
 				}
-				.text {
-					width: 50%;
-					padding: 0;
-				}
+			}
+		}
 
-				&:nth-child(even) {
-					flex-direction: row-reverse;
+		.text {
+			font-size: 1.1rem;
+			margin: 0 6rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.aboutSection {
+		.container{
+			width: 35rem;
+			.card {
+				.eaglesImg {
+					width: 10rem;
 				}
 			}
 		}
 	}
 }
 
-@media (min-width: 1200px) {
-	.text {
-		font-size: 1.1rem;
-	}
-}
-
 @media (min-width: 1400px) {
 	.aboutSection {
 		.container {
+			width: 40rem;
 			.card {
-				margin: 2em;
 
-				.imgBox {
-					height: 23rem;
-					width: 25rem;
+				.eaglesImg {
+					width: 12rem;
 				}
 
-				.text {
-                    padding: 0em;
-                    font-size: 1.2rem;
-				}
+			}
+		}
+		.text {
+			margin-top: 1em;
+			font-size: 1.2rem;
+			width: 45rem;
+		}
+
+		.rate {
+			a {
+				font-size: 6rem;
 			}
 		}
 	}

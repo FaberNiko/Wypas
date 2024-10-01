@@ -14,8 +14,11 @@ i18n
 					about: "About us",
 					headerTxt:
 						"Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
+					about1: `Our burgers have already been appreciated three times in the "Eagles of Gastronomy" plebiscite `,
+					about2: `However, what we are most happy about is what you think about our burgers!`,
+					about3: `And Your opinions and reviews say one thing - you like the taste! `,
 					events: "Events",
-					eventDesc: `One of our food trucks is waiting for you every day at ul. Targowa in Kalwaria, but our second one is waiting to go to you so that he can decorate various events and events with burgers! If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone or e-mail. Rental conditions and costs are determined individually based on the details of the event.`,
+					eventDesc: `One of our food trucks is waiting for you every day at Targowa st. in Kalwaria, but our second one is waiting to go to you so that he can decorate various events and events with burgers! If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone or e-mail. Rental conditions and costs are determined individually based on the details of the event.`,
 					menu: "Menu",
 					month_burger: "Burger of the Month",
 					contact: "Contact",
@@ -57,7 +60,7 @@ i18n
 					sauces_type:
 						"garlic sauce, mayo sauce, BBQ sauce, honey & mustard sauce, hot sauce",
 					drink: "bottled drinks",
-					desc: "Another month, another seasonal proposition from Wypas 🍔 The end of summer is just around the corner, so we want to serve you a combination whose taste is inextricably associated with this change of seasons, and in our original interpretation it creates a really interesting combination 🌞🍂 Here's the September Burger, i.e. PLUM 💜",
+					desc: "October welcomes another seasonal proposition. This month our guest will be PUMPKIN 🎃 We have composed something that will surely be remembered by many of you 🍔 The above-mentioned October novelty is an amazing combination of baked pieces of seasonal pumpkin and original mayo sauce with ginger and curry 🟡 And classic beef or chicken , cheddar cheese, bacon, tomatoes, pickles, lettuce, red and roasted onion create compositions that will delight even the most demanding palates.",
 					papper_bag: "papper bag",
 					hours: "Opening hours",
 					mon: "mon",
@@ -68,7 +71,7 @@ i18n
 					read_more: "Read more",
 					other: "Other burgers (beside WYPAS)",
 					delivery: "FREE delivery for orders from PLN 50 up to 10 km",
-					
+					opinion: 'Google rating'
 				},
 			},
 			pl: {
@@ -77,9 +80,9 @@ i18n
 					about: "O nas",
 					headerTxt:
 						"Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
-					about1: `Jesteśmy trzykrotnymi laureatami konkursu "Orły Gastronomi" `,
-					about2: `Działamy od 2018 roku i stale szukamy nowych smaków `,
-					about3: `Tworzymy burgery z pasją i zamiłowaniem do smaku! `,
+					about1: `Już trzykrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
+					about2: `Jednak najbardziej cieszy nas to, co Wy sądzicie o naszych burgerach! `,
+					about3: `A Wasze opinie i recenzje mówią jedno - to Wam smakuje! `,
 					events: "Eventy",
 					eventDesc: `Jeden z naszych food trucków codziennie czeka na Was na Ul. Targowej w Kalwarii, jednak nasz drugi czeka aby wyruszyć do was, by móc uświetnić burgerami najróżniejsze wydarzenia i imprezy! Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swój event lub masz inne propozycje współpracy zapraszamy do kontaktu telefonicznego lub mailowego. Warunki i koszty wynajmu ustalane są indywidualnie w oparciu o szczegóły  wydarzenia.`,
 					menu: "menu",
@@ -113,7 +116,7 @@ i18n
 						"kotlet buraczany / rukola / pomidor / cebula czerwona / nasiona słonecznika / sos żurawinowy / sos remulada",
 					mini_burgers: "Mini burgery",
 					mini_burgers_desc:
-						"W opcji mini możecie zamówić każdego z naszych burgerów w dowolnej ilości z minimum 2 dnjiowych wyprzedzeniem",
+						"W opcji mini możecie zamówić każdego z naszych burgerów w dowolnej ilości z minimum 2 dniowym wyprzedzeniem",
 					trimmings_text:
 						"Do wyboru <0>bułka maślana</0> lub <1>bułka z sezamem</1>",
 					belgian_fries: "frytki belgijskie",
@@ -122,7 +125,7 @@ i18n
 					sauces: "sos",
 					sauces_type: "czosnkowy, majonezowy, BBQ, miodowo-musztardowy, ostry",
 					drink: "napój",
-					desc: "Kolejny miesiąc, kolejna sezonowa propozycja od Wypasa 🍔 Koniec lata tuż za rogiem, więc chcemy wam zaserwować połączenie, którego smak nieodłącznie kojarzy się z tą zmianą pór roku, a w naszej autorskiej interpretacji tworzy naprawdę ciekawe połączenie 🌞🍂 Przed wami Burger września, czyli ŚLIWKA 💜",
+					desc: "Październik wita kolejna sezonową propozycją. W tym miesiącu naszym gościem będzie DYNIA 🎃 Skomponowaliśmy coś, co utkwi  w pamięci napewno wielu z Was🍔 Wyżej wspomniana październikowa nowość, to niesamowite połączenie pieczonych kawałków sezonowej dyni oraz autorskiego sosu majo z dodatkiem imbiru i curry 🟡 A do tego klasycznie wołowina lub kurczak, ser cheddar, bekon, pomidory, pikle, sałata, cebula czerwona  oraz prażona tworzy kompozycje gwarantującą zachwyt nawet najbardziej wymagające podniebienia.",
 					papper_bag: "torba papierowa",
 					hours: "Godziny otwarcia",
 					mon: "pn",
@@ -133,6 +136,7 @@ i18n
 					read_more: "Czytaj więcej",
 					other: "Pozostałe (poza burgerem WYPAS)",
 					delivery: "Dawóz GRATIS dla zamówień od 50 zł do 10km",
+					opinion: "Ocena na portalu Google"
 				},
 			},
 		},

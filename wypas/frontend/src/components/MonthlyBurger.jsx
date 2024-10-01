@@ -1,7 +1,7 @@
 import styles from "./MonthlyBurger.module.scss";
 import { useTranslation } from "react-i18next";
 import useFetch from "../hooks/useFetch";
-import imageUrl from "../images/sliwka.jpg";
+import imageUrl from "../images/month.jpg";
 import { motion } from "framer-motion";
 export default function MonthlyBurger({ link }) {
 	const { i18n, t } = useTranslation(); // Pobieranie funkcji tłumaczeń oraz informacji o języku
@@ -55,7 +55,7 @@ export default function MonthlyBurger({ link }) {
 							{t("desc")}
 							<br />
 							{/* {burger.attributes.Description.substring(0, 200)}... */}
-							<a href={link} target="_blank" rel="noopener noreferrer">
+							<a href='https://www.facebook.com/photo/?fbid=984139057061867&set=a.465692378906540' target="_blank" rel="noopener noreferrer">
 								{" "}
 								{t("read_more")}
 							</a>

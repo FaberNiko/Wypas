@@ -66,15 +66,7 @@ export default function Navbar(isScrolled) {
 							{t("about")}
 						</a>
 					</motion.li>
-					<motion.li
-						className="nav-ul__item"
-						initial={{ opacity: 0, x: -30 }}
-						whileInView={{ opacity: 1, x: 0 }}
-						transition={{ type: "spring", duration: 2 }}>
-						<a href="#events" className="nav-item" onClick={handleClick}>
-							{t("events")}
-						</a>
-					</motion.li>
+
 					<motion.li
 						className="nav-ul__item"
 						initial={{ opacity: 0, x: -30 }}
@@ -82,6 +74,15 @@ export default function Navbar(isScrolled) {
 						transition={{ type: "spring", duration: 2 }}>
 						<a href="#menu" className="nav-item" onClick={handleClick}>
 							menu
+						</a>
+					</motion.li>
+					<motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -30 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
+						<a href="#events" className="nav-item" onClick={handleClick}>
+							{t("events")}
 						</a>
 					</motion.li>
 					<motion.li
