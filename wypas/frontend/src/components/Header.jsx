@@ -1,5 +1,3 @@
-import IconFacebook from "./FacebookIcon";
-import IconInstagram from "./InstaIcon";
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
 import Logo from "../images/wypas.png";
@@ -40,21 +38,7 @@ export default function Header() {
 						transition={{ type: "spring", duration: 1.5 }}>
 						{t("show_menu")}
 					</motion.a>
-					{/* <div className={styles.icons}>
-					<a
-					className={styles.socialIcon}
-					href="https://www.instagram.com/wypas_burger_foodtruck/"
-					target="blank">
-					<IconInstagram />
-					</a>
-					<a
-					className={styles.socialIcon}
-					href="https://www.facebook.com/p/Wypas-Burger-100063973456060/"
-					target="blank">
-					<IconFacebook />
-					</a>
-					</div> */}
-				</div>
+						</div>
 			</div>
 		</header>
 	);
