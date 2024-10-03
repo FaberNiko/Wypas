@@ -23,6 +23,20 @@ export default function Contact() {
 					initial={{ opacity: 0, x: 30 }}
 					whileInView={{ opacity: 1, x: 0 }}
 					transition={{ type: "tween" }}></motion.img>
+				<div className={styles.icons}>
+					<a
+						className={styles.socialIcon}
+						href="https://www.instagram.com/wypas_burger_foodtruck/"
+						target="blank">
+						<IconInstagram />
+					</a>
+					<a
+						className={styles.socialIcon}
+						href="https://www.facebook.com/p/Wypas-Burger-100063973456060/"
+						target="blank">
+						<IconFacebook />
+					</a>
+				</div>
 				<motion.p
 					className={styles.delivery}
 					initial={{ opacity: 0, x: 30 }}
@@ -58,20 +72,6 @@ export default function Contact() {
 						<li>{t("sun")} 14:00 - 21:00</li>
 					</ul>
 				</motion.div>
-			</div>
-			<div className={styles.icons}>
-				<a
-					className={styles.socialIcon}
-					href="https://www.instagram.com/wypas_burger_foodtruck/"
-					target="blank">
-					<IconInstagram />
-				</a>
-				<a
-					className={styles.socialIcon}
-					href="https://www.facebook.com/p/Wypas-Burger-100063973456060/"
-					target="blank">
-					<IconFacebook />
-				</a>
 			</div>
 		</section>
 	);
