@@ -10,7 +10,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 4em ;
+	padding-bottom: 2em ;
 	color: #fff;
 	text-align: center;
 
@@ -50,12 +50,15 @@
 .icons {
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	margin-top: 1em;
 
 	.socialIcon {
-		background: none;
-		border: none;
-		height: 2.5rem;
-		margin: 0.5rem;
+		text-align: center;
+		color: #fff;
+		text-decoration: none;
+		font-size: 2rem;
+		padding: .5em;
 	}
 }
 
@@ -76,7 +79,7 @@
 	}
 
 	.icons .socialIcon {
-		height: 2.5rem;
+		font-size: 2.2rem;
 	}
 }
 
@@ -91,7 +94,7 @@
 	}
 
 	.icons .socialIcon {
-		height: 3rem;
+		font-size: 2.3rem;
 	}
 }
 
@@ -100,12 +103,15 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		padding: 0;
-		margin-right: 8rem;
+		margin-bottom: 1em;
 
 		.delivery {
 			font-size: 1.2rem;
-			width: 30%;
+			width: 20%;
+		}
+
+		.info {
+			margin: 2em;
 		}
 		.logo {
 			width: 25rem;
@@ -113,9 +119,13 @@
 		}
 	}
 
+	.icons {
+		margin: 2em;
+	}
+
 	.icons .socialIcon {
-		height: 3rem;
-		margin-right: 1rem;
+		height: 4rem;
+		font-size: 2.4rem;
 		transition: transform 0.3s;
 
 		&:hover {
