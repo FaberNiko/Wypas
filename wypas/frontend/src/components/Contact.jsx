@@ -61,7 +61,7 @@ export default function Contact() {
 					className={styles.socialIcon}
 					href="https://www.instagram.com/wypas_burger_foodtruck/"
 					target="blank">
-					<i class="fa-brands fa-instagram socialIcon"></i>
+					<i class="fa-brands fa-instagram"></i>
 				</a>
 				<a
 					className={styles.socialIcon}
