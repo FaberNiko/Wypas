@@ -4,6 +4,8 @@
 	justify-content: center;
 	align-items: center;
 	margin-top: 1em;
+	background-color: #010101;
+
 	.container {
 		display: flex;
 		justify-content: center;
@@ -19,12 +21,14 @@
 			margin: 0.2em;
 			background-color: #020202;
 			border-radius: 15px;
+
 			.eaglesImg {
 				border-radius: 15px;
 				width: 6rem;
 			}
 		}
 	}
+
 	.text {
 		text-align: center;
 		margin: 0.5em;
@@ -38,14 +42,12 @@
 		flex-direction: column;
 		text-align: center;
 		color: #333;
+
 		a {
 			position: relative;
 			font-size: 4.5rem;
 			color: goldenrod;
 			text-decoration: none;
-			.starImg {
-				position: absolute;
-			}
 		}
 	}
 }
@@ -53,30 +55,26 @@
 @media (min-width: 768px) {
 	.aboutSection {
 		.container {
-			.card {
-				.eaglesImg {
-					width: 7rem;
-				}
+			.card .eaglesImg {
+				width: 7rem;
 			}
 		}
-
 		.text {
 			margin: 0 4em;
 		}
 	}
 }
+
 @media (min-width: 992px) {
 	.aboutSection {
 		.container {
 			justify-content: space-evenly;
 			width: 28rem;
-			.card {
-				.eaglesImg {
-					width: 8.5rem;
-				}
+
+			.card .eaglesImg {
+				width: 8.5rem;
 			}
 		}
-
 		.text {
 			font-size: 1.1rem;
 			margin: 0 6rem;
@@ -86,12 +84,10 @@
 
 @media (min-width: 1200px) {
 	.aboutSection {
-		.container{
+		.container {
 			width: 35rem;
-			.card {
-				.eaglesImg {
-					width: 10rem;
-				}
+			.card .eaglesImg {
+				width: 10rem;
 			}
 		}
 	}
@@ -101,12 +97,8 @@
 	.aboutSection {
 		.container {
 			width: 40rem;
-			.card {
-
-				.eaglesImg {
-					width: 12rem;
-				}
-
+			.card .eaglesImg {
+				width: 12rem;
 			}
 		}
 		.text {
@@ -114,11 +106,8 @@
 			font-size: 1.2rem;
 			width: 45rem;
 		}
-
-		.rate {
-			a {
-				font-size: 6rem;
-			}
+		.rate a {
+			font-size: 6rem;
 		}
 	}
 }

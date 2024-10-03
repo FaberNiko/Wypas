@@ -5,12 +5,15 @@
 	text-align: center;
 }
 
+.contactSection{
+	background-color: #010101;
+}
 .container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding-bottom: 2em ;
+	padding-bottom: 2em;
 	color: #fff;
 	text-align: center;
 
@@ -58,7 +61,7 @@
 		color: #fff;
 		text-decoration: none;
 		font-size: 2rem;
-		padding: .5em;
+		padding: 0.5em;
 	}
 }
 
@@ -103,7 +106,6 @@
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 1em;
 
 		.delivery {
 			font-size: 1.2rem;
@@ -113,6 +115,7 @@
 		.info {
 			margin: 2em;
 		}
+
 		.logo {
 			width: 25rem;
 			height: 25rem;
@@ -124,7 +127,6 @@
 	}
 
 	.icons .socialIcon {
-		height: 4rem;
 		font-size: 2.4rem;
 		transition: transform 0.3s;
 

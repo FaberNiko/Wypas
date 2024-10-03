@@ -44,7 +44,7 @@ function App() {
 			<Navbar isScrolled={isScrolled} />
 			<Header />
 			<About />
-			<News />
+			{/* <News /> */}
 			<Menu />
 			<Events />
 			<MonthlyBurger />

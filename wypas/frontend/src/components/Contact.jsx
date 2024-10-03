@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
 	const { t } = useTranslation();
 	return (
-		<section id="contact">
+		<section id="contact" className={styles.contactSection}>
 			<motion.h2
 				className="sectionTitle"
 				initial={{ opacity: 0, x: -30 }}
