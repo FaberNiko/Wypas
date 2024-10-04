@@ -10,6 +10,7 @@ i18n
 		resources: {
 			en: {
 				translation: {
+					welcome: "Welcome to Wypas Burger!",
 					home: "Home",
 					about: "About us",
 					headerTxt:
@@ -76,10 +77,11 @@ i18n
 			},
 			pl: {
 				translation: {
+					welcome: "Witamy w Wypas Burger!",
 					home: "strona główna",
 					about: "O nas",
 					headerTxt:
-						"Witamy w Wypas Burger! Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
+						"Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
 					about1: `Już trzykrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
 					about2: `Jednak najbardziej cieszy nas to, co Wy sądzicie o naszych burgerach! `,
 					about3: `A Wasze opinie i recenzje mówią jedno - to Wam smakuje! `,

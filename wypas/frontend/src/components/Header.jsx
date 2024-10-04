@@ -23,6 +23,7 @@ export default function Header() {
 						whileInView={{ opacity: 1, y: 0 }}
 						transition={{ type: "spring", duration: 1 }}
 					/>
+					<h1>{t("welcome")}</h1>
 					<motion.div
 						className={styles.aboutText}
 						initial={{ opacity: 0, y: -100 }}
