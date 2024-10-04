@@ -17,6 +17,7 @@ export default function Contact() {
 			<div className={styles.container}>
 				<motion.img
 					src={logo}
+					alt="Wypas burger logo"
 					className={styles.logo}
 					initial={{ opacity: 0, x: 30 }}
 					whileInView={{ opacity: 1, x: 0 }}
