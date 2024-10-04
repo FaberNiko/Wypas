@@ -76,12 +76,12 @@ html {
 		}
 
 		&:hover .phoneIcon {
-			transform: translateX(-50px);
+			transform: translateX(-130px);
 		}
 
 		&:hover .number {
 			opacity: 1;
-			transform: translateX(0);
+			transform: translateX(50px);
 		}
 	}
 }
