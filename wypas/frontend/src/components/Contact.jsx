@@ -2,7 +2,8 @@ import styles from "./Contact.module.scss";
 import logo from "../images/wypas.png";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
-
+import Fb from "../images/facebook.png";
+import Insta from '../images/instagram.png'
 export default function Contact() {
 	const { t } = useTranslation();
 	return (
@@ -57,20 +58,20 @@ export default function Contact() {
 						<li>{t("sun")} 14:00 - 21:00</li>
 					</ul>
 				</motion.div>
-			<div className={styles.icons}>
-				<a
-					className={styles.socialIcon}
-					href="https://www.instagram.com/wypas_burger_foodtruck/"
-					target="blank">
-					<i class="fa-brands fa-instagram"></i>
-				</a>
-				<a
-					className={styles.socialIcon}
-					href="https://www.facebook.com/p/Wypas-Burger-100063973456060/"
-					target="blank">
-					<i class="fa-brands fa-facebook"></i>
-				</a>
-			</div>
+				<div className={styles.icons}>
+					<a
+						className={styles.socialIcon}
+						href="https://www.instagram.com/wypas_burger_foodtruck/"
+						target="blank">
+						<img src={Insta} alt="Instagram icon" className={styles.icon} />
+					</a>
+					<a
+						className={styles.socialIcon}
+						href="https://www.facebook.com/p/Wypas-Burger-100063973456060/"
+						target="blank">
+						<img src={Fb} alt="Facebook icon" className={styles.icon} />
+					</a>
+				</div>
 			</div>
 		</section>
 	);
