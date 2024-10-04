@@ -1,6 +1,6 @@
 import styles from "./Header.module.scss";
 import { useTranslation } from "react-i18next";
-import Logo from "../images/wypas.png";
+import Logo from "../images/wypas.jpg";
 import { motion } from "framer-motion";
 
 export default function Header() {

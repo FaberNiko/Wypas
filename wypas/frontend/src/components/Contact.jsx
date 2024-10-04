@@ -1,5 +1,5 @@
 import styles from "./Contact.module.scss";
-import logo from "../images/wypas.png";
+import logo from "../images/wypas.jpg";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
 import Fb from "../images/facebook.png";
