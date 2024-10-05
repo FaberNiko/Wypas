@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'TitleFont';
+	src: url('./fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
 .header {
 	.textWrapper {
 		display: none;
@@ -26,6 +33,7 @@
 
 			h1 {
 				text-align: center;
+				font-family: 'TitleFont', serif;
 				text-transform: uppercase;
 				font-weight: bold;
 				font-size: 1.3rem;

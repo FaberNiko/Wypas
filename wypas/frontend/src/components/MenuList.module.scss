@@ -1,3 +1,9 @@
+@font-face {
+	font-family: 'TitleFont';
+	src: url('./fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
 .list {
 	list-style: none;
 	padding: 0 1em;
@@ -17,6 +23,7 @@
 			font-size: 1.8rem;
 			font-weight: bold;
 			text-transform: uppercase;
+			font-family: 'TitleFont', serif;
 		}
 
 		.menuIcons {

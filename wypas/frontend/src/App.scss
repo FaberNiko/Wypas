@@ -4,9 +4,23 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "TitleFont";
+	src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "SpaceGrotesk";
+	src: url("./fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
 body {
-	font-family: "Platypi", serif;
 	overflow-x: hidden;
+	font-family: "SpaceGrotesk", serif;
 }
 
 html {
@@ -160,6 +174,7 @@ html {
 	text-transform: uppercase;
 	font-size: 2rem;
 	color: #fff;
+	font-family: "TitleFont", serif;
 }
 
 .newsCard {
