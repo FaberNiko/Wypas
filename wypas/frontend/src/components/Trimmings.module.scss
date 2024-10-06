@@ -4,6 +4,13 @@
 	box-sizing: border-box;
 }
 
+@font-face {
+	font-family: "TitleFont";
+	src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
 .trimmingsSection {
 	width: 100%;
 	overflow: hidden;
@@ -29,12 +36,14 @@
 			list-style: none;
 
 			.trimmingsItem {
+				
 				padding: 1em;
 				color: #fff;
 				text-align: center;
 				border-top: 1px solid white;
-
+				
 				.trimmingTitle {
+					font-family: "TitleFont", serif;
 					font-size: 1.8rem;
 					font-weight: bold;
 					text-transform: uppercase;
