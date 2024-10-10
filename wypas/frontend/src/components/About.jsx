@@ -20,39 +20,27 @@ export const About = () => {
 				{t("about")}
 			</motion.h2>
 			<div className={styles.container}>
-				<motion.div
-					className={styles.card}
-					initial={{ opacity: 0, x: -30 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring", duration: 1.5 }}>
+				<div className={styles.card}>
 					<img
 						src={gast1}
 						alt="diploma of gastronomy eagles"
 						className={styles.eaglesImg}
 					/>
-				</motion.div>
-				<motion.div
-					className={styles.card}
-					initial={{ opacity: 0, x: -30 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring", duration: 1.5 }}>
+				</div>
+				<div className={styles.card}>
 					<img
 						src={gast2}
 						alt="diploma of gastronomy eagles"
 						className={styles.eaglesImg}
 					/>
-				</motion.div>
-				<motion.div
-					className={styles.card}
-					initial={{ opacity: 0, x: -30 }}
-					whileInView={{ opacity: 1, x: 0 }}
-					transition={{ type: "spring", duration: 1.5 }}>
+				</div>
+				<div className={styles.card}>
 					<img
 						src={gast3}
 						alt="diploma of gastronomy eagles"
 						className={styles.eaglesImg}
 					/>
-				</motion.div>
+				</div>
 			</div>
 			<motion.p
 				className={styles.text}

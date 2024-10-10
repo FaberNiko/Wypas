@@ -10,41 +10,13 @@ import News from "./components/News.jsx";
 import { useEffect, useState } from "react";
 import { About } from "./components/About.jsx";
 function App() {
-	const [isScrolled, setIsScrolled] = useState(false);
-	useEffect(() => {
-		const handleScroll = () => {
-			if (window.scrollY > 50) {
-				setIsScrolled(true);
-			} else {
-				setIsScrolled(false);
-			}
-		};
-
-		const handleClickOutside = event => {
-			if (
-				navListRef.current &&
-				!navListRef.current.contains(event.target) &&
-				burgerBtnRef.current &&
-				!burgerBtnRef.current.contains(event.target)
-			) {
-				setMenuOpen(false);
-			}
-		};
-
-		window.addEventListener("scroll", handleScroll);
-		document.addEventListener("mousedown", handleClickOutside);
-
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-			document.removeEventListener("mousedown", handleClickOutside);
-		};
-	}, []);
+	
 	return (
 		<>
-			<Navbar isScrolled={isScrolled} />
+			<Navbar />
 			<Header />
 			<About />
-			{/* <News /> */}
+			<News />
 			<Menu />
 			<Events />
 			<MonthlyBurger />

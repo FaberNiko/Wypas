@@ -8,22 +8,41 @@ import { useTranslation } from "react-i18next";
 import phone from "../images/phone.png";
 import { motion } from "framer-motion";
 
-export default function Navbar(isScrolled) {
+export default function Navbar({ isScrolled }) {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navListRef = useRef(null);
 	const burgerBtnRef = useRef(null);
-	const { i18n } = useTranslation();
+	const { i18n, t } = useTranslation();
 
 	const handleClick = () => {
 		setMenuOpen(!menuOpen);
 	};
 
-	const changeLanguage = lng => {
+	const changeLanguage = (lng) => {
 		i18n.changeLanguage(lng);
 		handleClick();
 	};
 
-	const { t } = useTranslation();
+	useEffect(() => {
+		const handleClickOutside = (event) => {
+			// Sprawdzamy, czy kliknięcie było poza listą nawigacyjną
+			if (
+				navListRef.current &&
+				!navListRef.current.contains(event.target) &&
+				burgerBtnRef.current &&
+				!burgerBtnRef.current.contains(event.target)
+			) {
+				setMenuOpen(false);
+			}
+		};
+
+		document.addEventListener("mousedown", handleClickOutside);
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside);
+		};
+	}, []);
+
 	return (
 		<div>
 			<nav className={`navbar ${isScrolled ? "scrolled" : ""}`}>
@@ -66,14 +85,13 @@ export default function Navbar(isScrolled) {
 							{t("about")}
 						</a>
 					</motion.li>
-
 					<motion.li
 						className="nav-ul__item"
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ type: "spring", duration: 2 }}>
 						<a href="#menu" className="nav-item" onClick={handleClick}>
-							menu
+							{t("menu")}
 						</a>
 					</motion.li>
 					<motion.li
