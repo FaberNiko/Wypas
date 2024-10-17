@@ -112,6 +112,15 @@ export default function Navbar({ isScrolled }) {
 							{t("month_burger")}
 						</a>
 					</motion.li>
+					{/* <motion.li
+						className="nav-ul__item"
+						initial={{ opacity: 0, x: -30 }}
+						whileInView={{ opacity: 1, x: 0 }}
+						transition={{ type: "spring", duration: 2 }}>
+						<a href="#reviews" className="nav-item" onClick={handleClick}>
+							{t("reviews")}
+						</a>
+					</motion.li> */}
 					<motion.li
 						className="nav-ul__item"
 						initial={{ opacity: 0, x: -30 }}

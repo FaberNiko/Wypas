@@ -7,7 +7,7 @@ const STRAPI_API_URL = "http://localhost:1337/api/reviews";
 async function fetchReviews() {
   try {
     const response = await fetch(
-      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&reviews_sort=newest&key=${process.env.API_KEY}`
+      `https://maps.googleapis.com/maps/api/place/details/json?place_id=${PLACE_ID}&fields=reviews&reviews_sort=newest&key=${process.env.API_KEY}&language=pl`
     );
 
     const data = await response.json();
@@ -20,7 +20,14 @@ async function fetchReviews() {
     }
 
     for (const review of reviews) {
-      await saveReviewInStrapi(review);
+      // Check if the review already exists in Strapi
+      const exists = await checkReviewExists(review.id);
+      if (!exists) {
+        // Save the review only if it does not exist
+        await saveReviewInStrapi(review);
+      } else {
+        console.log(`Opinia od ${review.author_name} już istnieje w Strapi.`);
+      }
     }
 
     console.log("Opinie zostały pobrane i zapisane do Strapi.");
@@ -29,20 +36,45 @@ async function fetchReviews() {
   }
 }
 
+async function checkReviewExists(reviewId) {
+  try {
+    const response = await fetch(`${STRAPI_API_URL}?filters[review_id]=${reviewId}`);
+    const data = await response.json();
+
+    // Check if any reviews with the same ID exist
+    return data.data.length > 0;
+  } catch (error) {
+    console.error("Błąd podczas sprawdzania istnienia opinii:", error.message);
+    return false; // If there's an error, assume the review doesn't exist
+  }
+}
+
 async function saveReviewInStrapi(review) {
   try {
     const response = await fetch(STRAPI_API_URL, {
       method: "POST",
+      headers: {
+        Authorization: `Bearer ${process.env.STRAPI_TOKEN}`,
+        'Content-Type': 'application/json'
+      },
       body: JSON.stringify({
-        author_name: review.author_name,
-        text: review.text,
-        rating: review.rating,
+        data: {
+          Autor: review.author_name,
+          Opinia: review.text,
+          Rating: review.rating,
+          review_id: review.id // Save the review ID to identify it later
+        },
       }),
     });
 
-    console.log(`Opinia ${review.author_name} zapisana w Strapi.`);
+    const result = await response.json();
+    if (result.error) {
+      console.error(result.error.details);
+    } else {
+      console.log(`Opinia ${review.author_name} zapisana w Strapi.`);
+    }
   } catch (error) {
-    console.error(error);
+    console.error("Błąd podczas zapisywania opinii:", error.message);
   }
 }
 

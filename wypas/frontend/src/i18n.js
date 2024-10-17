@@ -13,6 +13,7 @@ i18n
 					welcome: "Welcome to Wypas Burger!",
 					home: "Home",
 					about: "About us",
+					reviews: "Reviews",
 					headerTxt:
 						"Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
 					about1: `Our burgers have already been appreciated three times in the "Eagles of Gastronomy" plebiscite `,
@@ -72,7 +73,8 @@ i18n
 					read_more: "Read more",
 					other: "Other burgers (beside WYPAS)",
 					delivery: "FREE delivery for orders from PLN 50 up to 10 km",
-					opinion: 'Google rating'
+					opinion: 'Google rating',
+					pump: "Pumpkin"
 				},
 			},
 			pl: {
@@ -80,6 +82,7 @@ i18n
 					welcome: "Witamy w Wypas Burger!",
 					home: "strona główna",
 					about: "O nas",
+					reviews: "Opinie",
 					headerTxt:
 						"Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
 					about1: `Już trzykrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
@@ -138,7 +141,8 @@ i18n
 					read_more: "Czytaj więcej",
 					other: "Pozostałe (poza burgerem WYPAS)",
 					delivery: "Dawóz GRATIS dla zamówień od 50 zł do 10km",
-					opinion: "Ocena na portalu Google"
+					opinion: "Ocena na portalu Google",
+					pump: "Dynia"
 				},
 			},
 		},

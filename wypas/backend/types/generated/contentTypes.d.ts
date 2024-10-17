@@ -882,6 +882,7 @@ export interface ApiReviewReview extends Schema.CollectionType {
     singularName: 'review';
     pluralName: 'reviews';
     displayName: 'Review';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -899,13 +900,6 @@ export interface ApiReviewReview extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Ocena: Attribute.Decimal &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     Opinia: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
@@ -913,14 +907,7 @@ export interface ApiReviewReview extends Schema.CollectionType {
           localized: true;
         };
       }>;
-    Data: Attribute.Date &
-      Attribute.Required &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    profileImage: Attribute.Media<'images' | 'files' | 'videos' | 'audios'> &
+    Rating: Attribute.Float &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {

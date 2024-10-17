@@ -1,0 +1,91 @@
+.reviewsSection {
+	padding: 50px 0;
+	background-color: #000;
+
+
+}
+
+.sliderContainer {
+	width: 90%; /* Szerokość kontenera */
+	margin: 0 auto; /* Wyśrodkowanie kontenera */
+
+	.slick-slide {
+		display: flex;
+		justify-content: center; /* Wyśrodkowanie kart w slajdach */
+
+		/* Dodanie marginesu do kart */
+		> div {
+			margin: 0 1.5rem; // Ustaw margines o wartości 1.5rem między kartami
+		}
+	}
+}
+
+.card {
+	padding: 2rem;
+	margin-top: 1rem;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-sizing: border-box; /* Zapewnienie, że padding i margines są uwzględniane w szerokości */
+	
+	.info {
+		background-color: #fff;
+		padding: 2rem 0;
+		border-radius: 10px;
+		height: 250px; /* Stała wysokość dla każdej karty */
+		overflow: hidden; /* Ukrycie nadmiarowego tekstu */
+		text-overflow: ellipsis;
+		text-decoration: none;
+
+		.name {
+			font-size: 1.2rem;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.stars {
+			margin-bottom: 10px;
+		}
+
+		.review {
+			font-size: 1rem;
+			padding: 0 2em;
+			color: #000;
+			overflow: hidden; /* Ukrycie nadmiarowego tekstu */
+			text-overflow: ellipsis; /* Dodanie wielokropka dla nadmiarowego tekstu */
+			position: relative; /* Umożliwia pozycjonowanie pseudo-elementu */
+		}
+
+		.review.hidden {
+			opacity: 0.5; /* Przygaszony tekst */
+		}
+
+		.review.ellipsis::after {
+			content: "..."; /* Dodanie wielokropka */
+			position: absolute; /* Pozycjonowanie pseudo-elementu */
+			right: 0; /* Umieszczenie go na prawo od kontenera */
+			background: white; /* Tło dla lepszej czytelności */
+			padding-left: 5px; /* Odstęp od tekstu */
+		}
+
+
+		a {
+			margin-top: 1em;
+			text-decoration: none;
+			color: #c2c1c1;
+		}
+	}
+}
+
+/* Stylizacja strzałek slidera */
+.slick-prev,
+.slick-next {
+	z-index: 1;
+	width: 30px;
+	height: 30px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	font-size: 30px;
+	color: white;
+}

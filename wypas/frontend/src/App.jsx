@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar.jsx";
 import News from "./components/News.jsx";
 import { useEffect, useState } from "react";
 import { About } from "./components/About.jsx";
+import { Reviews } from "./components/Reviews.jsx";
 function App() {
 	
 	return (
@@ -16,10 +17,11 @@ function App() {
 			<Navbar />
 			<Header />
 			<About />
-			<News />
+			{/* <News /> */}
 			<Menu />
 			<Events />
 			<MonthlyBurger />
+			{/* <Reviews/> */}
 			<Contact />
 			<Footer />
 		</>

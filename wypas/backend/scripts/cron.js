@@ -2,7 +2,7 @@ const { exec } = require('child_process');
 
 module.exports = {
   '* * * * *': async () => {
-    exec('node scripts/fetchReviews.js', (error, stdout, stderr) => {
+    exec('node scripts/reviews.js', (error, stdout, stderr) => {
       if (error) {
         console.error(`Błąd podczas uruchamiania skryptu: ${error.message}`);
         return;

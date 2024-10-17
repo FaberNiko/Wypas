@@ -7,3 +7,16 @@ body, html, #root, .App {
   overflow-x: hidden;
 }
 
+.slick-prev,
+.slick-next {
+  z-index: 1;
+  margin: 0 -2rem;
+  width: 40px;
+  height: 40px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 40px;
+  color: white; 
+}

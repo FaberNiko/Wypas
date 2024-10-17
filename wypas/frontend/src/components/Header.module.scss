@@ -1,6 +1,6 @@
 @font-face {
-	font-family: 'TitleFont';
-	src: url('./fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+	font-family: "TitleFont";
+	src: url("./fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 }
@@ -33,7 +33,7 @@
 
 			h1 {
 				text-align: center;
-				font-family: 'TitleFont', serif;
+				font-family: "TitleFont", serif;
 				text-transform: uppercase;
 				font-weight: bold;
 				font-size: 1.3rem;
@@ -103,7 +103,7 @@
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (min-height: 600px) and (orientation: landscape) {
 	.header {
 		.textWrapper {
 			display: flex;
@@ -124,7 +124,7 @@
 
 		.hero .content {
 			.logo {
-				height: 40rem;
+				height: 22rem;
 			}
 
 			h1 {
@@ -133,17 +133,17 @@
 			.aboutText {
 				padding: 0 8em;
 				line-height: 2;
-				margin: 0 4rem 2rem;
+				margin: 0 4rem 1rem;
 			}
 			.menuButton {
-				margin-bottom: 5.5em;
-				font-size: 1.1rem;
+				margin-bottom: 10em;
+				font-size: 0.9rem;
 			}
 		}
 	}
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1400px) and (min-height: 600px) and (orientation: landscape) {
 	.header .textWrapper .text {
 		font-size: 10rem;
 	}
@@ -152,19 +152,67 @@
 		padding: 4em;
 
 		.logo {
-			height: 45rem;
+			height: 23rem;
 		}
+
+		h1 {
+			margin-bottom: 0.5rem;
+		}
+
+		.aboutText {
+			margin: 0 6rem 2rem;
+		}
+	}
+}
+
+@media (min-width: 1400px) and (min-height: 700px) and (orientation: landscape) {
+	.header .textWrapper .text {
+		font-size: 10rem;
+	}
+
+	.header .hero .content {
+		padding: 4em;
+
+		.logo {
+			height: 28rem;
+		}
+
 		h1 {
 			font-size: 1.9rem;
 			margin-bottom: 0.5rem;
 		}
 
 		.aboutText {
-			padding: 0 18em;
-			margin: 0 6rem 1rem;
+			padding: 0 2rem; /* Zmniejszenie paddingu po bokach */
+			margin: 0 auto 1rem; /* Wyśrodkowanie i zmniejszenie marginesu */
+			max-width: 800px;
 		}
+	}
+}
+
+@media (min-width: 1400px) and (min-height: 800px) and (orientation: landscape) {
+
+	.header .hero .content {
+		padding: 4em;
+
+		.logo {
+			height: 40rem;
+		}
+
+		h1 {
+			font-size: 2rem;
+			margin-bottom: 0.5rem;
+		}
+
+		.aboutText {
+			padding: 0 2rem; /* Zmniejszenie paddingu po bokach */
+			margin: 0 auto 1rem; /* Wyśrodkowanie i zmniejszenie marginesu */
+			max-width: 800px;
+			font-size: 1.1rem;
+		}
+
 		.menuButton {
-			margin-bottom: 5.5em;
+			font-size: 1.1rem;
 		}
 	}
 }
