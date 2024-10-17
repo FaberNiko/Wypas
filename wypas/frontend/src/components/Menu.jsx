@@ -47,21 +47,20 @@ export default function Menu() {
 					price={23}
 					icons={[vegan]}
 				/>
-				<MenuList title={t("month_burger")} price={29} />
+				<MenuList title={t("month_burger")} price={29} style={{borderBottom: "1px solid white" }}/>
+				<p className={styles.trimmings}>
+					<Trans i18nKey="trimmings_text">
+						<span>buttered roll</span>
+						<span>sesame seed roll</span>
+					</Trans>
+				</p>
 				<MenuList
 					title={t("mini_burgers")}
 					desc={t("mini_burgers_desc")}
 					price={"KLASYK / CHEDDAR 11"}
 					miniPrice={`${t("other")} 12`}
-					
 				/>
 			</motion.div>
-			<p className={styles.trimmings}>
-				<Trans i18nKey="trimmings_text">
-					<span>buttered roll</span>
-					<span>sesame seed roll</span>
-				</Trans>
-			</p>
 		</>
 	);
 

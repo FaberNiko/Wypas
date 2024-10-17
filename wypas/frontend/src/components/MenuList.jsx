@@ -1,11 +1,11 @@
 import styles from "./MenuList.module.scss";
 import { motion } from "framer-motion";
 
-export default function MenuList({ title, desc, price, icons, miniPrice }) {
+export default function MenuList({ title, desc, price, icons, miniPrice, style }) {
 	return (
 		<ul className={styles.list}>
-			<li className={styles.listItem}>
-				<p className={styles.title}>{title}</p>
+			<li className={styles.listItem} style={style}>
+				<p className={styles.title} >{title}</p>
 				<div className={styles.menuIcons}>
 					{icons &&
 						icons.map((icon, index) => (

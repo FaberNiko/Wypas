@@ -110,9 +110,9 @@ i18n
 					wypas_desc:
 						"wołowina 400g / 2x bekon / 2x cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada / sos BBQ",
 					sztygar_desc:
-						"wołowina 200g / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada",
+						"wołowina 200g / kurczak / bekon / cheddar panierowany na czarno / sałata / pikle / pomidor / cebula czerwona / sos remulada / prażona cebula ",
 					jack_desc:
-						"wołowina 200g / 3x bekon / cheddar / panierowana mozarella / sałata / pikle / pomidor / cebula czerwona / sos koktajlowy z Jack'iem Danielsem / sos BBQ / prażona cebula",
+						"wołowina 200g / 3x bekon / cheddar / panierowana mozarella / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos koktajlowy z Jack'iem Danielsem / sos BBQ ",
 					juhas_desc:
 						"wołowina 200g / bekon / oscypek / sałata / pikle / pomidor / cebula czerwona / sos remulada / konfitura żurawinowa",
 					hiszpan_desc:
@@ -142,7 +142,7 @@ i18n
 					other: "Pozostałe (poza burgerem WYPAS)",
 					delivery: "Dawóz GRATIS dla zamówień od 50 zł do 10km",
 					opinion: "Ocena na portalu Google",
-					pump: "Dynia"
+					pump: "Dynia",
 				},
 			},
 		},

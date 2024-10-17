@@ -47,22 +47,26 @@
 		width: 100%;
 		justify-content: center;
 	}
-
 	.trimmings {
 		color: #fff;
-		margin: 1em;
 		padding: 1em;
-		border-top: 1px solid white;
+		margin: 0.5em;
 		text-align: center;
 		letter-spacing: 2px;
 		line-height: 2;
 
+
+		
 		span {
 			color: #ff5757;
 			font-weight: bold;
 			text-transform: uppercase;
 		}
 	}
+
+	
+
+
 }
 
 @media (min-width: 772px) {
@@ -114,7 +118,6 @@
 		margin-bottom: 1em;
 	}
 
-	.trimmings {
-		width: 50%;
-	}
+	
+	
 }
