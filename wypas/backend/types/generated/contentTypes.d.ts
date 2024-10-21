@@ -807,7 +807,6 @@ export interface ApiBurgerBurger extends Schema.CollectionType {
   attributes: {
     Title: Attribute.String &
       Attribute.Required &
-      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
@@ -815,7 +814,6 @@ export interface ApiBurgerBurger extends Schema.CollectionType {
       }>;
     Description: Attribute.Text &
       Attribute.Required &
-      Attribute.Unique &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
