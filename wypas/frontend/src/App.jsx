@@ -17,11 +17,11 @@ function App() {
 			<Navbar />
 			<Header />
 			<About />
-			{/* <News /> */}
+			<News />
 			<Menu />
 			<Events />
 			<MonthlyBurger />
-			{/* <Reviews/> */}
+			<Reviews/>
 			<Contact />
 			<Footer />
 		</>
