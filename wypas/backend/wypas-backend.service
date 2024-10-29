@@ -1,0 +1,11 @@
+[Unit]
+Description=CMS
+After=network.target
+
+[Service]
+ExecStart=/root/.nvm/versions/node/v20.17.0/bin/npm run develop
+WorkingDirectory=/root/Wypas/wypas/backend
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
