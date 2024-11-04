@@ -64,7 +64,7 @@ export const About = () => {
 				<a
 					href="https://www.google.com/maps/place/Wypas+Burger+-+foodtruck/@49.8698102,19.6769623,17z/data=!4m8!3m7!1s0x4716638cd7c00d63:0x14adfa4cab98916e!8m2!3d49.8698102!4d19.6769623!9m1!1b1!16s%2Fg%2F11q_c8djz0?entry=ttu&g_ep=EgoyMDI0MDkyNS4wIKXMDSoASAFQAw%3D%3D"
 					target="_blank">
-					5,0
+					4,9
 					<img src={star} alt="star" className={styles.starImg} />
 				</a>
 				{t("opinion")}

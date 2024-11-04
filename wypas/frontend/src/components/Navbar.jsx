@@ -8,11 +8,28 @@ import { useTranslation } from "react-i18next";
 import phone from "../images/phone.png";
 import { motion } from "framer-motion";
 
-export default function Navbar({ isScrolled }) {
+export default function Navbar() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const navListRef = useRef(null);
 	const burgerBtnRef = useRef(null);
 	const { i18n, t } = useTranslation();
+	const [isScrolled, setIsScrolled] = useState(false);
+
+	useEffect(() => {
+		const handleScroll = () => {
+		  if (window.scrollY > 50) { // Możesz dostosować wartość 50
+			setIsScrolled(true);
+		  } else {
+			setIsScrolled(false);
+		  }
+		};
+	
+		window.addEventListener('scroll', handleScroll);
+	
+		return () => {
+		  window.removeEventListener('scroll', handleScroll);
+		};
+	  }, []);
 
 	const handleClick = () => {
 		setMenuOpen(!menuOpen);
@@ -112,7 +129,7 @@ export default function Navbar({ isScrolled }) {
 							{t("month_burger")}
 						</a>
 					</motion.li>
-					{/* <motion.li
+					<motion.li
 						className="nav-ul__item"
 						initial={{ opacity: 0, x: -30 }}
 						whileInView={{ opacity: 1, x: 0 }}
@@ -120,7 +137,7 @@ export default function Navbar({ isScrolled }) {
 						<a href="#reviews" className="nav-item" onClick={handleClick}>
 							{t("reviews")}
 						</a>
-					</motion.li> */}
+					</motion.li>
 					<motion.li
 						className="nav-ul__item"
 						initial={{ opacity: 0, x: -30 }}

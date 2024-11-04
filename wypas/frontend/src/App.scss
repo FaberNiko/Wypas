@@ -184,10 +184,10 @@ html {
 	bottom: 140px;
 	margin: auto;
 	height: 5rem;
-	width: 22rem;
-	border: 1px solid orange;
+	width: 15rem;
+	border: 2px solid rgb(255, 255, 255);
 	border-radius: 15px;
-	background-color: #333;
+	background-color: #1f1f1f;
 	color: #fff;
 	z-index: 20;
 
@@ -256,6 +256,10 @@ html {
 	.newsCard {
 		right: 20px;
 		width: 30rem;
+
+		.feed-info {
+			margin-top: .5rem;
+		}
 	}
 
 	.navList {

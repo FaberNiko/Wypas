@@ -29,25 +29,25 @@ i18n
 					burgers: "Burgers",
 					trimmings: "Trimmings",
 					klasyk_desc:
-						"200g beef / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
+						"200g beef or chicken / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
 					cheddar_desc:
-						"200g beef / cheddar / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
+						"200g beef or chicken / cheddar / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
 					bekon_desc:
-						"200g beef / bacon / cheddar / lettuce / pickles / tomato / onion rings / remoulade sauce / BBQ sauce",
+						"200g beef or chicken / bacon / cheddar / lettuce / pickles / tomato / onion rings / remoulade sauce / BBQ sauce",
 					meksyk_desc:
-						"200g beef / bacon / cheddar / nachos / jalapeño / lettuce / pickles / tomato / red onion / remoulade sauce / sambal sauce",
+						"200g beef or chicken / bacon / cheddar / nachos / jalapeño / lettuce / pickles / tomato / red onion / remoulade sauce / sambal sauce",
 					eldiablo_desc:
-						"200g beef / bacon / cheddar / jalapeño / lettuce / pickles / tomato / red onion / crispy onion / sriracha sauce / habanero sauce",
+						"200g beef or chicken / bacon / cheddar / jalapeño / lettuce / pickles / tomato / red onion / crispy onion / sriracha sauce / habanero sauce",
 					wypas_desc:
-						"400g beef / 2x bacon / 2x cheddar / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce / BBQ sauce",
+						"400g beef or 2x chicken / 2x bacon / 2x cheddar / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce / BBQ sauce",
 					sztygar_desc:
-						"200g beef / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
+						"200g beef or chicken / lettuce / pickles / tomato / red onion / crispy onion / remoulade sauce",
 					jack_desc:
-						"200g beef / 3x bacon / cheddar / breaded mozzarella / lettuce / pickles / tomato / red onion / Jack Daniel's cocktail sauce / BBQ sauce / crispy onion",
+						"200g beef or chicken / 3x bacon / cheddar / breaded mozzarella / lettuce / pickles / tomato / red onion / Jack Daniel's cocktail sauce / BBQ sauce / crispy onion",
 					juhas_desc:
-						"200g beef / bacon / oscypek cheese / lettuce / pickles / tomato / red onion / remoulade sauce / cranberry jam",
+						"200g beef or chicken / bacon / oscypek cheese / lettuce / pickles / tomato / red onion / remoulade sauce / cranberry jam",
 					hiszpan_desc:
-						"200g beef / cheddar / chorizo / nachos / lettuce / pickles / tomato / red onion / honey mustard sauce",
+						"200g beef or chicken / cheddar / chorizo / nachos / lettuce / pickles / tomato / red onion / honey mustard sauce",
 					vege_desc:
 						"beet patty / arugula / tomato / red onion / sunflower seeds / cranberry sauce / remoulade sauce",
 					mini_burgers: "Mini burgers",
@@ -98,25 +98,25 @@ i18n
 					burgers: "Burgery",
 					trimmings: "Dodatki",
 					klasyk_desc:
-						"wołowina 200g / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada",
+						"wołowina 200g lub kurczak / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada",
 					cheddar_desc:
-						"wołowina 200g / cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada",
+						"wołowina 200g lub kurczak / cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada",
 					bekon_desc:
-						"wołowina 200g / bekon / cheddar / sałata / pikle / pomidor / krążki cebulowe / sos remulada / sos BBQ",
+						"wołowina 200g lub kurczak / bekon / cheddar / sałata / pikle / pomidor / krążki cebulowe / sos remulada / sos BBQ",
 					meksyk_desc:
-						"wołowina 200g / bekon / cheddar / nachosy / jalapeño / sałata / pikle / pomidor / cebula czerwona / sos remulada / sos sambal",
+						"wołowina 200g lub kurczak / bekon / cheddar / nachosy / jalapeño / sałata / pikle / pomidor / cebula czerwona / sos remulada / sos sambal",
 					eldiablo_desc:
-						"wołowina 200g / bekon / cheddar / jalapeño / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos sriracha / sos habanero",
+						"wołowina 200g lub kurczak / bekon / cheddar / jalapeño / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos sriracha / sos habanero",
 					wypas_desc:
-						"wołowina 400g / 2x bekon / 2x cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada / sos BBQ",
+						"wołowina 400g lub 2x kurczak / 2x bekon / 2x cheddar / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos remulada / sos BBQ",
 					sztygar_desc:
-						"wołowina 200g / kurczak / bekon / cheddar panierowany na czarno / sałata / pikle / pomidor / cebula czerwona / sos remulada / prażona cebula ",
+						"wołowina 200g lub kurczak / bekon / cheddar panierowany na czarno / sałata / pikle / pomidor / cebula czerwona / sos remulada / prażona cebula ",
 					jack_desc:
-						"wołowina 200g / 3x bekon / cheddar / panierowana mozarella / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos koktajlowy z Jack'iem Danielsem / sos BBQ ",
+						"wołowina 200g lub kurczak / 3x bekon / cheddar / panierowana mozarella / sałata / pikle / pomidor / cebula czerwona / prażona cebula / sos koktajlowy z Jack'iem Danielsem / sos BBQ ",
 					juhas_desc:
-						"wołowina 200g / bekon / oscypek / sałata / pikle / pomidor / cebula czerwona / sos remulada / konfitura żurawinowa",
+						"wołowina 200g lub kurczak / bekon / oscypek / sałata / pikle / pomidor / cebula czerwona / sos remulada / konfitura żurawinowa",
 					hiszpan_desc:
-						"wołowina 200g / cheddar / chorizzo / nachosy / sałata / pikle / pomidor / cebula czerwona / sos miodowo-musztardowy",
+						"wołowina 200g lub kurczak / cheddar / chorizzo / nachosy / sałata / pikle / pomidor / cebula czerwona / sos miodowo-musztardowy",
 					vege_desc:
 						"kotlet buraczany / rukola / pomidor / cebula czerwona / nasiona słonecznika / sos żurawinowy / sos remulada",
 					mini_burgers: "Mini burgery",
@@ -140,7 +140,7 @@ i18n
 					sun: "nd",
 					read_more: "Czytaj więcej",
 					other: "Pozostałe (poza burgerem WYPAS)",
-					delivery: "Dawóz GRATIS dla zamówień od 50 zł do 10km",
+					delivery: "Dowóz GRATIS dla zamówień od 50 zł do 10km",
 					opinion: "Ocena na portalu Google",
 					pump: "Dynia",
 				},

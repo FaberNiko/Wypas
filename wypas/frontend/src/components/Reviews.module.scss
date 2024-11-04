@@ -1,12 +1,10 @@
 .reviewsSection {
 	padding: 50px 0;
 	background-color: #000;
-
-
 }
 
 .sliderContainer {
-	width: 90%; /* Szerokość kontenera */
+	width: 100%; /* Szerokość kontenera */
 	margin: 0 auto; /* Wyśrodkowanie kontenera */
 
 	.slick-slide {
@@ -26,7 +24,7 @@
 	text-align: center;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	box-sizing: border-box; /* Zapewnienie, że padding i margines są uwzględniane w szerokości */
-	
+
 	.info {
 		background-color: #fff;
 		padding: 2rem 0;
@@ -67,7 +65,6 @@
 			padding-left: 5px; /* Odstęp od tekstu */
 		}
 
-
 		a {
 			margin-top: 1em;
 			text-decoration: none;
@@ -76,16 +73,25 @@
 	}
 }
 
-/* Stylizacja strzałek slidera */
 .slick-prev,
 .slick-next {
-	z-index: 1;
-	width: 30px;
-	height: 30px;
+	display: none;
 }
 
 .slick-prev:before,
 .slick-next:before {
-	font-size: 30px;
-	color: white;
+	visibility: hidden;
+}
+
+
+
+@media (min-width: 992px) {
+	.sliderContainer {
+		width: 80%;
+	}
+}
+@media (min-width: 1200px) {
+	.sliderContainer {
+		width: 85%;
+	}
 }
