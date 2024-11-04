@@ -16,7 +16,7 @@ export const Reviews = () => {
 		loading,
 		error,
 		data = [],
-	} = useFetch(`http://localhost:1337/api/reviews`);
+	} = useFetch(`http://burgerwypas.pl:1337/api/reviews`);
 
 	const trimReviewText = text => {
 		if (text.length > MAX_LENGTH) {

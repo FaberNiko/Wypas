@@ -10,7 +10,7 @@ export default function MonthlyBurger({ link }) {
 		loading,
 		error,
 		data = [],
-	} = useFetch(`http://localhost:1337/api/burgers?populate=*&locale=${locale}`);
+	} = useFetch(`http://burgerwypas.pl:1337/api/burgers?populate=*&locale=${locale}`);
 
 	console.log(data);
 
@@ -20,7 +20,7 @@ export default function MonthlyBurger({ link }) {
 
 	const heroImageUrl =
 		data.length > 0
-			? `http://localhost:1337${data[0].attributes.Image.data.attributes.url}`
+			? `http://burgerwypas.pl:1337${data[0].attributes.Image.data.attributes.url}`
 			: "";
 	return (
 		<section id="monthly">
@@ -36,7 +36,7 @@ export default function MonthlyBurger({ link }) {
 					{t("month_burger")}
 				</motion.h2>
 				{data.map(burger => {
-					const imageUrl = `http://localhost:1337${burger.attributes.Image.data.attributes.url}`;
+					const imageUrl = `http://burgerwypas.pl:1337${burger.attributes.Image.data.attributes.url}`;
 					return (
 						<div key={burger.id} className={styles.content}>
 							<motion.img
