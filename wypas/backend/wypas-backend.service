@@ -1,0 +1,12 @@
+[Unit]
+Description=Wypas burger backend
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/npm run develop
+WorkingDirectory=/root/Wypas/wypas/backend
+Restart=always
+Environment=PATH=$PATH:/usr/bin
+
+[Install]
+WantedBy=multi-user.target
