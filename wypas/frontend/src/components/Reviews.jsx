@@ -16,7 +16,7 @@ export const Reviews = () => {
 		loading,
 		error,
 		data = [],
-	} = useFetch(`http://burgerwypas.pl:1337/api/reviews`);
+	} = useFetch(`https://burgerwypas.pl/strapi/api/reviews`);
 
 	const trimReviewText = text => {
 		if (text.length > MAX_LENGTH) {
@@ -65,7 +65,7 @@ export const Reviews = () => {
 	};
 
 	return (
-		<section id= "reviews" className={styles.reviewsSection}>
+		<section id="reviews" className={styles.reviewsSection}>
 			<h2 className="sectionTitle">{t("reviews")}</h2>
 			<div className={styles.sliderContainer}>
 				<Slider {...settings}>
@@ -83,7 +83,11 @@ export const Reviews = () => {
 									))}
 								</div>
 								<p className={styles.review}>{trimReviewText(review.review)}</p>
-							<a href="https://www.google.pl/maps/place/Wypas+Burger+-+foodtruck/@49.8698102,19.6743874,17z/data=!4m8!3m7!1s0x4716638cd7c00d63:0x14adfa4cab98916e!8m2!3d49.8698102!4d19.6769623!9m1!1b1!16s%2Fg%2F11q_c8djz0?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank">{t("read_more")}</a>
+								<a
+									href="https://www.google.pl/maps/place/Wypas+Burger+-+foodtruck/@49.8698102,19.6743874,17z/data=!4m8!3m7!1s0x4716638cd7c00d63:0x14adfa4cab98916e!8m2!3d49.8698102!4d19.6769623!9m1!1b1!16s%2Fg%2F11q_c8djz0?entry=ttu&g_ep=EgoyMDI0MTAxMy4wIKXMDSoASAFQAw%3D%3D"
+									target="_blank">
+									{t("read_more")}
+								</a>
 							</div>
 						</div>
 					))}

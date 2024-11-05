@@ -10,17 +10,18 @@ export default function MonthlyBurger({ link }) {
 		loading,
 		error,
 		data = [],
-	} = useFetch(`http://burgerwypas.pl:1337/api/burgers?populate=*&locale=${locale}`);
+	} = useFetch(
+		`https://burgerwypas.pl/strapi/api/burgers?populate=*&locale=${locale}`
+	);
 
 	console.log(data);
-
 
 	// if (loading) return <p>Loading...</p>;
 	// if (error) return <p>Coś poszło nie tak</p>;
 
 	const heroImageUrl =
 		data.length > 0
-			? `http://burgerwypas.pl:1337${data[0].attributes.Image.data.attributes.url}`
+			? `https://burgerwypas.pl/strapi${data[0].attributes.Image.data.attributes.url}`
 			: "";
 	return (
 		<section id="monthly">
@@ -36,7 +37,7 @@ export default function MonthlyBurger({ link }) {
 					{t("month_burger")}
 				</motion.h2>
 				{data.map(burger => {
-					const imageUrl = `http://burgerwypas.pl:1337${burger.attributes.Image.data.attributes.url}`;
+					const imageUrl = `https://burgerwypas.pl/strapi${burger.attributes.Image.data.attributes.url}`;
 					return (
 						<div key={burger.id} className={styles.content}>
 							<motion.img

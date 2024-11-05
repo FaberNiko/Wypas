@@ -2,7 +2,7 @@ require("dotenv").config();
 // Upewnij się, że używasz poprawnego klucza API i identyfikatora miejsca
 const PLACE_ID = "ChIJYw3A14xjFkcRbpGYq0z6rRQ";
 
-const STRAPI_API_URL = "http://localhost:1337/api/reviews";
+const STRAPI_API_URL = "https://burgerwypas.pl/strapi/api/reviews";
 
 async function fetchReviews() {
   try {

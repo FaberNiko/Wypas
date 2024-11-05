@@ -9,7 +9,7 @@ export default function News() {
 		loading,
 		error,
 		data = [],
-	} = useFetch("http://burgerwypas.pl:1337/api/feeds");
+	} = useFetch("https://burgerwypas.pl/strapi/api/feeds");
 
 	const [isClicked, setIsClicked] = useState(false);
 
