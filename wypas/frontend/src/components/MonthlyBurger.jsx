@@ -57,7 +57,7 @@ export default function MonthlyBurger({ link }) {
 									{burger.attributes.Description}
 									<br />
 									<a
-										href="https://www.facebook.com/photo/?fbid=984139057061867&set=a.465692378906540"
+										href="https://www.facebook.com/profile.php?id=100063973456060"
 										target="_blank"
 										rel="noopener noreferrer">
 										{" "}
