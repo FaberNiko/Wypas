@@ -5,7 +5,7 @@ import imageUrl from "../images/month.jpg";
 import { motion } from "framer-motion";
 export default function MonthlyBurger({ link }) {
 	const { i18n, t } = useTranslation(); // Pobieranie funkcji tłumaczeń oraz informacji o języku
-	const locale = i18n.language;
+	const locale = i18n.language || 'pl';
 	const {
 		loading,
 		error,
@@ -16,8 +16,8 @@ export default function MonthlyBurger({ link }) {
 
 	console.log(data);
 
-	// if (loading) return <p>Loading...</p>;
-	// if (error) return <p>Coś poszło nie tak</p>;
+	if (loading) return <p>Loading...</p>;
+	if (error) return <p>Coś poszło nie tak</p>;
 
 	const heroImageUrl =
 		data.length > 0

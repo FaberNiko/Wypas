@@ -146,6 +146,7 @@ i18n
 				},
 			},
 		},
+		lng: "pl",
 		fallbackLng: "pl",
 		interpolation: {
 			escapeValue: false,
