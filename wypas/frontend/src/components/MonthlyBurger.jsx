@@ -41,7 +41,7 @@ export default function MonthlyBurger({ link }) {
 					return (
 						<div key={burger.id} className={styles.content}>
 							<motion.img
-								src={heroImageUrl}
+								src={imageUrl}
 								alt="Photo of monthly burger"
 								initial={{ opacity: 0, x: -30 }}
 								whileInView={{ opacity: 1, x: 0 }}

@@ -185,6 +185,7 @@ html {
 	margin: auto;
 	height: 5rem;
 	width: 15rem;
+
 	border: 2px solid rgb(255, 255, 255);
 	border-radius: 15px;
 	background-color: #1f1f1f;
@@ -192,8 +193,11 @@ html {
 	z-index: 20;
 
 	.feed-info {
-		font-size: 1rem;
+		margin-top: 5px;
+		font-size: .8rem;
 		text-align: center;
+	
+		
 	}
 
 	.date {
