@@ -40,18 +40,26 @@ export default function News() {
 				)}
 			</button>
 			<AnimatePresence>
-				{isClicked &&
-					data.map(feed => (
-						<motion.div
-							initial={{ opacity: 0, x: 30, y: 30 }}
-							animate={{ opacity: 1, x: 0, y: 0 }}
-							exit={{ opacity: 0, x: 10, y: 10 }}
-							key={feed.id}
-							className="newsCard">
-							<p className="date">{feed.attributes.Date}</p>
-							<p className="feed-info">{feed.attributes.description}</p>
-						</motion.div>
-					))}
+				{isClicked && (
+					<div className="newsContainer">
+						{data.map((feed, index) => (
+							<motion.div
+								initial={{ opacity: 0, y: 30 }}
+								animate={{ opacity: 1, y: 0 }}
+								exit={{ opacity: 0, y: 10 }}
+								transition={{ delay: index * 0.1 }}
+								key={feed.id}
+								className="newsCard">
+								<div className="dateBox">
+									<p className="date">{feed.attributes.Date}</p>
+								</div>
+								<div className="feedBox">
+									<p className="feed-info">{feed.attributes.description}</p>
+								</div>
+							</motion.div>
+						))}
+					</div>
+				)}
 			</AnimatePresence>
 		</>
 	);

@@ -177,28 +177,37 @@ html {
 	font-family: "TitleFont", serif;
 }
 
-.newsCard {
+.newsContainer {
 	position: fixed;
-	text-align: center;
 	right: 10px;
 	bottom: 140px;
-	margin: auto;
-	height: 5rem;
-	width: 15rem;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	max-height: 50vh; // Zapobiega nachodzeniu na inne elementy
+}
 
-	border: 2px solid rgb(255, 255, 255);
+.newsCard {
+	position: relative;
+	width: 200px;
+	padding: 10px;
+	border: 2px solid white;
 	border-radius: 15px;
 	background-color: #1f1f1f;
-	color: #fff;
-	z-index: 20;
+	color: white;
 
-	.feed-info {
-		margin-top: 5px;
-		font-size: .8rem;
-		text-align: center;
-	
+	.feedBox {
+
+		padding: .5em;
+		.feed-info {
+			margin-top: 5px;
+			font-size: .8rem;
+			text-align: center;
 		
+			
+		}
 	}
+
 
 	.date {
 		font-size: 0.7rem;
@@ -207,6 +216,7 @@ html {
 		color: #a3a3a3;
 		text-align: right;
 	}
+	
 }
 
 .newsButton {
