@@ -47,7 +47,7 @@ export default function Menu() {
 					price={26}
 					icons={[vegan]}
 				/>
-				<MenuList title={t("month_burger")} price={30} style={{borderBottom: "1px solid white" }}/>
+				<MenuList title={t("month_burger")} price={32} style={{borderBottom: "1px solid white" }}/>
 				<p className={styles.trimmings}>
 					<Trans i18nKey="trimmings_text">
 						<span>buttered roll</span>
