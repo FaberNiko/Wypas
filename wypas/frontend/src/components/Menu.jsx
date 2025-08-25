@@ -22,29 +22,29 @@ export default function Menu() {
 				initial={{ x: -100, opacity: 0 }}
 				animate={{ x: 0, opacity: 1 }}
 				transition={{ type: "tween" }}>
-				<MenuList title={"KLASYK"} desc={t("klasyk_desc")} price={24} />
-				<MenuList title={"CHEDDAR"} desc={t("cheddar_desc")} price={26} />
-				<MenuList title={"BEKON"} desc={t("bekon_desc")} price={29} />
+				<MenuList title={"KLASYK"} desc={t("klasyk_desc")} price={26} />
+				<MenuList title={"CHEDDAR"} desc={t("cheddar_desc")} price={28} />
+				<MenuList title={"BEKON"} desc={t("bekon_desc")} price={31} />
 				<MenuList
 					title={"MEKSYK"}
 					desc={t("meksyk_desc")}
-					price={28}
+					price={30}
 					icons={[chili, chili]}></MenuList>
 				<MenuList
 					title={"EL DIABLO"}
 					desc={t("eldiablo_desc")}
-					price={27}
+					price={29}
 					icons={[chili, chili, chili]}
 				/>
-				<MenuList title={"WYPAS"} desc={t("wypas_desc")} price={36} />
-				<MenuList title={"SZTYGAR"} desc={t("sztygar_desc")} price={30} />
-				<MenuList title={"JACK"} desc={t("jack_desc")} price={30} />
-				<MenuList title={"JUHAS"} desc={t("juhas_desc")} price={30} />
-				<MenuList title={"HISZPAN"} desc={t("hiszpan_desc")} price={30} />
+				<MenuList title={"WYPAS"} desc={t("wypas_desc")} price={38} />
+				<MenuList title={"SZTYGAR"} desc={t("sztygar_desc")} price={32} />
+				<MenuList title={"JACK"} desc={t("jack_desc")} price={32} />
+				<MenuList title={"JUHAS"} desc={t("juhas_desc")} price={32} />
+				<MenuList title={"HISZPAN"} desc={t("hiszpan_desc")} price={32} />
 				<MenuList
 					title={"VEGE BURAK"}
 					desc={t("vege_desc")}
-					price={24}
+					price={26}
 					icons={[vegan]}
 				/>
 				<MenuList title={t("month_burger")} price={30} style={{borderBottom: "1px solid white" }}/>
@@ -57,8 +57,8 @@ export default function Menu() {
 				<MenuList
 					title={t("mini_burgers")}
 					desc={t("mini_burgers_desc")}
-					price={"KLASYK / CHEDDAR 11"}
-					miniPrice={`${t("other")} 12`}
+					price={"KLASYK / CHEDDAR 13"}
+					miniPrice={`${t("other")} 14`}
 				/>
 			</motion.div>
 		</>

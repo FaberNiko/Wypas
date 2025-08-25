@@ -14,14 +14,14 @@ export default function Trimmings() {
 					transition={{type:"tween"}}>
 					<li className={style.trimmingsItem}>
 						<p className={style.trimmingTitle}>{t("belgian_fries")}</p>
-						<p className={style.trimmingsPrice}>11zł</p>
+						<p className={style.trimmingsPrice}>12zł</p>
 						<p className={style.info}>{t("in_set")}</p>
-						<p className={style.trimmingsPrice}>9zł</p>
+						<p className={style.trimmingsPrice}>10zł</p>
 					</li>
 					<li className={style.trimmingsItem}>
 						<p className={style.trimmingTitle}>{t("nuggets")}</p>
 						<p className={style.info}>(150g)</p>
-						<p className={style.trimmingsPrice}>11zł</p>
+						<p className={style.trimmingsPrice}>13zł</p>
 					</li>
 					<li className={style.trimmingsItem}>
 						<p className={style.trimmingTitle}>{t("sauces")}</p>
