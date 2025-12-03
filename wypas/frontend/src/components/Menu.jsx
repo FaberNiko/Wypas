@@ -57,8 +57,8 @@ export default function Menu() {
 				<MenuList
 					title={t("mini_burgers")}
 					desc={t("mini_burgers_desc")}
-					price={"KLASYK / CHEDDAR 13"}
-					miniPrice={`${t("other")} 14`}
+					price={"KLASYK / CHEDDAR 11"}
+					miniPrice={`${t("other")} 12`}
 				/>
 			</motion.div>
 		</>
