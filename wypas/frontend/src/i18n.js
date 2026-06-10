@@ -19,8 +19,18 @@ i18n
 					about1: `Our burgers have already been appreciated five times in the "Eagles of Gastronomy" plebiscite `,
 					about2: `However, what we are most happy about is what you think about our burgers!`,
 					about3: `And Your opinions and reviews say one thing - you like the taste! `,
-					events: "Events",
-					eventDesc: `One of our food trucks is waiting for you every day at Targowa st. in Kalwaria, but our second one is waiting to go to you so that he can decorate various events and events with burgers! If you are interested in renting our food truck for your event or have other cooperation proposals, please contact us by phone or e-mail. Rental conditions and costs are determined individually based on the details of the event.`,
+					events: "Summer with Wypas",
+					eventDesc: `This year, in addition to delicious food, you'll also find a fantastic place to relax and meet friends at our address!
+We cordially invite you to our city beach – the only place in the area where you can experience a true holiday atmosphere without leaving the city! The perfect relaxation kit awaits you – there's plenty of space to sit, laze around, eat well, and drink!`,
+					eventDesc2: `🍟 Food court – our reliable burgers, as well as the new Sigma Chicken food truck
+
+⛱️ Chillout area – lounge chairs and space to relax in a unique beach atmosphere
+
+🥤 A wide selection of soft and alcoholic beverages – perfect for cooling off!
+
+During the summer, you can count on various attractions and events at this location – we'll keep you updated on our Facebook and Instagram! 🎉
+
+👉 We invite you – the beach is free, open to everyone during Wypas Burger opening hours.`,
 					menu: "Menu",
 					month_burger: "Burger of the Month",
 					contact: "Contact",
@@ -88,8 +98,14 @@ i18n
 					about1: `Już pięciokrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
 					about2: `Jednak najbardziej cieszy nas to, co Wy sądzicie o naszych burgerach! `,
 					about3: `A Wasze opinie i recenzje mówią jedno - to Wam smakuje! `,
-					events: "Eventy",
-					eventDesc: `Jeden z naszych food trucków codziennie czeka na Was na Ul. Targowej w Kalwarii, jednak nasz drugi czeka aby wyruszyć do was, by móc uświetnić burgerami najróżniejsze wydarzenia i imprezy! Jeśli jesteś zainteresowany wynajęciem naszego food trucka na swój event lub masz inne propozycje współpracy zapraszamy do kontaktu telefonicznego lub mailowego. Warunki i koszty wynajmu ustalane są indywidualnie w oparciu o szczegóły  wydarzenia.`,
+					events: "Lato na Wypasie",
+					eventDesc: `Pod naszym adresem od tego roku oprócz pysznego jedzenia znajdziecie również rewelacyjne miejsce do relaksu i spotkań ze znajomymi! 
+Zapraszamy serdecznie na naszą plażę miejską- jedyne miejsce w okolicy, w którym poczujesz prawdziwy wakacyjny klimat bez wyjeżdżania z miasta! Na miejscu czeka na Was idealny zestaw do odpoczynku- jest gdzie posiedzieć, poleniuchować, dobrze zjeść i się napić!`,
+					eventDesc2: `🍟 Strefa gastro – nasze niezawodne burgery, a także nowy foodtruck z kurczakami Sigma Chicken 
+⛱️ Strefa chillu – leżaki i przestrzeń do relaksu w wyjątkowym, plażowym klimacie
+🥤 Szeroka oferta napojów bezalkoholowych oraz alkoholowych – idealnych na ochłodę! 
+W okresie wakacyjnym możecie liczyć na różne atrakcje i wydarzenia w tym miejscu– szczegóły podawać będziemy na bieżąco na naszym Facebooku i Instagramie! 🎉
+👉 Zapraszamy- plaża dostępna za darmo, dla każdego w godzinach otwarcia Wypas Burger.`,
 					menu: "menu",
 					month_burger: "burger miesiąca",
 					contact: "kontakt",
