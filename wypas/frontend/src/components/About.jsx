@@ -4,6 +4,7 @@ import gast1 from "../images/gastr24.jpg";
 import gast2 from "../images/gastr23.jpg";
 import gast3 from "../images/gastr22.jpg";
 import gast4 from "../images/gastr25.jpg";
+import gast5 from "../images/gastr26.jpg";
 import star from "../images/star.png";
 import { useTranslation } from "react-i18next";
 import { motion } from "framer-motion";
@@ -21,6 +22,13 @@ export const About = () => {
 				{t("about")}
 			</motion.h2>
 			<div className={styles.container}>
+				<div className={styles.card}>
+					<img
+						src={gast5}
+						alt="diploma of gastronomy eagles"
+						className={styles.eaglesImg}
+					/>
+				</div>
 				<div className={styles.card}>
 					<img
 						src={gast4}

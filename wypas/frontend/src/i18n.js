@@ -16,7 +16,7 @@ i18n
 					reviews: "Reviews",
 					headerTxt:
 						"Welcome to Wypas Burger! Visit us and get to know the place created with passion for good food and interesting flavors, by two experienced chefs.",
-					about1: `Our burgers have already been appreciated three times in the "Eagles of Gastronomy" plebiscite `,
+					about1: `Our burgers have already been appreciated five times in the "Eagles of Gastronomy" plebiscite `,
 					about2: `However, what we are most happy about is what you think about our burgers!`,
 					about3: `And Your opinions and reviews say one thing - you like the taste! `,
 					events: "Events",
@@ -85,7 +85,7 @@ i18n
 					reviews: "Opinie",
 					headerTxt:
 						"Odwiedź nas i poznaj miejsce stworzone z pasji do dobrego jedzenia i ciekawych smaków, przez dwóch doświadczonych szefów kuchni.",
-					about1: `Już trzykrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
+					about1: `Już pięciokrotnie nasze burgery zostały docenione w plebiscycie "Orły Gastronomii" `,
 					about2: `Jednak najbardziej cieszy nas to, co Wy sądzicie o naszych burgerach! `,
 					about3: `A Wasze opinie i recenzje mówią jedno - to Wam smakuje! `,
 					events: "Eventy",
