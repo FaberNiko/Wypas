@@ -35,13 +35,15 @@
       border: 3px solid rgba(255, 255, 255, 0.3);
       border-radius: 50%;
       flex-shrink: 0;
+      
+      
     }
 
     .textBox {
       padding: 2em 2.2em;
       width: 100%;
       max-width: 560px;
-      text-align: left;
+      text-align: center;
       font-size: 0.92rem;
       color: rgba(255, 255, 255, 0.88);
       line-height: 2.2;
@@ -91,6 +93,7 @@
       max-width: none;
       flex: 1;
       font-size: 1rem;
+      text-align: left;
     }
 
     .textContainer {
@@ -114,11 +117,6 @@
 
     .container {
       gap: 4rem;
-
-      // img {
-      // 	height: 36rem;
-      // 	width: 36rem;
-      // }
     }
   }
 }
